@@ -8,11 +8,23 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { WhyUsComponent } from './why-us/why-us.component';
 import { WorkedWithComponent } from './worked-with/worked-with.component';
 import { LatestNewsComponent } from './latest-news/latest-news.component';
+import { RouterModule } from '@angular/router/';
+import { routing } from './home.routing';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    routing
   ],
-  declarations: [HomeComponent, BannerComponent, SloganComponent, CaseStudyComponent, AboutUsComponent, WhyUsComponent, WorkedWithComponent, LatestNewsComponent]
+  declarations: [
+    HomeComponent,
+    BannerComponent,
+    SloganComponent,
+    CaseStudyComponent,
+    AboutUsComponent,
+    WhyUsComponent,
+    WorkedWithComponent,
+    LatestNewsComponent
+  ]
 })
 export class HomeModule { }
