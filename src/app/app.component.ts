@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'aw-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'aw works!';
