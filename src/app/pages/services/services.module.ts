@@ -1,3 +1,4 @@
+import { routing } from './services.routing';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ServicesComponent } from './services.component';
@@ -8,8 +9,15 @@ import { TrainingAndSupportComponent } from './training-and-support/training-and
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    routing
   ],
-  declarations: [ServicesComponent, DesignComponent, EngineeringComponent, TechnologyComponent, TrainingAndSupportComponent]
+  declarations: [
+    ServicesComponent,
+    DesignComponent,
+    EngineeringComponent,
+    TechnologyComponent,
+    TrainingAndSupportComponent
+  ]
 })
 export class ServicesModule { }

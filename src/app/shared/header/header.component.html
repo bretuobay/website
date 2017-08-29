@@ -1,34 +1,30 @@
-<nav class="navbar navbar-light bg-white">
-  <div class="container">
-    <div class="row">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <a class="navbar-brand" href="#">
-          <img src="/assets/brand/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-          &nbsp; Aviabird
-        </a>
-        <button class="navbar-toggler">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <a class="navbar-brand" routerLink="/home">
+                <img src="/assets/brand/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                &nbsp; Aviabird
+              </a>
+        <div class="btn-group ml-auto" placement="left" dropdown>
+          <button dropdownToggle type="button" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <ul *dropdownMenu class="dropdown-menu" role="menu">
+            <li role="menuitem" *ngFor="let nav of navItems">
+              <a class="dropdown-item" [routerLink]='nav.url'>{{nav.name}}</a>
+            </li>
+            <!-- <li class="divider dropdown-divider"></li> -->
+          </ul>
+        </div>
         <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">SERVICES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">WORK</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">WHY AVIABIRD</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">BLOG</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT US</a>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active" *ngFor="let nav of navItems">
+              <a class="nav-link" [routerLink]='nav.url'>{{nav.name}}</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
   </div>
-</nav>
+</div>
