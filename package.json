@@ -7,6 +7,8 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
+    "build:prod": "ng build --prod --sm=false --aot=true",
+    "test:prod": "cd dist && python -m SimpleHTTPServer 8800",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -20,6 +22,7 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "@angular/service-worker": "^1.0.0-beta.16",
     "bootstrap": "next",
     "core-js": "^2.4.1",
     "ngx-bootstrap": "^1.9.1",
