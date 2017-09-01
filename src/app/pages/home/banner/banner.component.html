@@ -1,7 +1,16 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <aw-slogan></aw-slogan>
-    <aw-case-study></aw-case-study>
-    <aw-case-study></aw-case-study>
+    <div class="row">
+      <aw-slogan class="col"></aw-slogan>
+      <div class="col-12 col-md-6 col-lg-7">
+        <aw-case-study
+          *ngFor="let case of caseStudy"
+          [name]="case.name"
+          [img]="case.img"
+          [heading]="case.heading"
+          [color]="case.color"
+        ></aw-case-study>
+      </div>
+    </div>
   </div>
 </div>

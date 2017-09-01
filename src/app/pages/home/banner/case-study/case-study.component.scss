@@ -1,0 +1,30 @@
+.case-card {
+  height: 350px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px #aaa;
+  border: 1px solid transparent;
+  transition: all 300ms;
+  
+  &:hover {
+    border: 1px solid #666;
+    box-shadow: 0 0 15px #888;
+  }
+
+  .case-detail {
+    margin-top: 2rem;
+    strong {
+      font-size: 0.8rem;
+    }
+    h4 {
+      margin-top: 0.8rem;
+      line-height: 1.5;
+    }
+  }
+
+  .case-img {
+    height: 300px;
+    position: relative;
+    top: 2rem;
+  }
+}

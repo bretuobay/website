@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'aw-case-study',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./case-study.component.scss']
 })
 export class CaseStudyComponent implements OnInit {
+  @Input() name: string;
+  @Input() heading: string;
+  @Input() img: string;
+  @Input() color: {bg: string, text: string};
 
   constructor() { }
 

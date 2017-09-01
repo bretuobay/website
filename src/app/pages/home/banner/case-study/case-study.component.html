@@ -1,3 +1,13 @@
-<p>
-  case-study works!
-</p>
+<div class="case-card" [ngStyle]="{'background-color': color.bg}">
+  <div class="container">
+    <div class="row">
+      <div class="col case-detail">
+        <strong [style.color]="color.text">{{name | uppercase}}</strong>
+        <h4>{{heading}}</h4>
+      </div>
+      <div class="col-7">
+        <img class="case-img" [src]="img" alt="name">
+      </div>
+    </div>
+  </div>
+</div>
