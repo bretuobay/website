@@ -1,28 +1,30 @@
-.worked-with {
-  .heading {
-    margin-top: 5rem;
-    i.border-before, i.border-after {
-      margin-top: 10px;
-      height: 1px;
-      width: 20px;
-      position: relative;
-      display: block;
-      background-color: #aaa;
+.jumbotron {
+  background-color: white;
+  .worked-with {
+    .heading {
+      i.border-before, i.border-after {
+        margin-top: 10px;
+        height: 1px;
+        width: 20px;
+        position: relative;
+        display: block;
+        background-color: #aaa;
+      }
+      i.border-before {
+        left: -2rem;
+      }
+      i.border-after {
+        right: -2rem;
+      }
     }
-    i.border-before {
-      left: -11px;
-    }
-    i.border-after {
-      right: -11px;
-    }
-  }
-
-  .client-list {
-    margin: 2rem auto 3rem;
-    .client-list-item {
-      margin: 1rem auto;
-      img {
-        height: 2rem;
+  
+    .client-list {
+      margin-top: 2rem;
+      .client-list-item {
+        margin: 1rem auto;
+        img {
+          height: 2rem;
+        }
       }
     }
   }

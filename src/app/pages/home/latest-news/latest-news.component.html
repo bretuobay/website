@@ -1,3 +1,21 @@
-<p>
-  latest-news works!
-</p>
+<section class="jumbotron jumbotron-fluid">
+  <div class="latest-news container">
+    <div class="heading row justify-content-center">
+      <i class="border-before"></i>
+      <h6 class="d-flex justify-content-center">LATEST</h6>
+      <i class="border-after"></i>
+    </div>
+    <div class="row news-list">
+      <div class="col news-list-item" *ngFor="let latest of latestNews">
+        <img [src]="latest.img" alt="latest.heading">
+        <h6 class="news-title">{{latest.title}}</h6>
+        <h4 class="news-heading">{{latest.heading}}</h4>
+        <a href="{{latest.url}}" target="_blank" class="read-more">
+          Read More
+          <i class="visit-link-arrow fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+        <hr class="border-white">
+      </div>
+    </div>
+  </div>
+</section>

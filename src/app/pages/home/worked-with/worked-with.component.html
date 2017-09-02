@@ -1,12 +1,14 @@
-<section class="worked-with container">
-  <div class="heading row justify-content-center">
-    <i class="border-before"></i>
-    <h5 class="d-flex justify-content-center">Who we’ve worked with</h5>
-    <i class="border-after"></i>
+<section class="jumbotron jumbotron-fluid">
+  <div class="worked-with container">
+    <div class="heading row justify-content-center">
+      <i class="border-before"></i>
+      <h6 class="d-flex justify-content-center">WHO WE'VE WORKED WITH</h6>
+      <i class="border-after"></i>
+    </div>
+    <ul class="nav nav-pills row justify-content-center nav-fill client-list">
+      <li class="nav-item client-list-item" *ngFor="let client of clientList">
+        <img [src]="client.img" [alt]="client.name">
+      </li>
+    </ul>
   </div>
-  <ul class="nav nav-pills row justify-content-center nav-fill client-list">
-    <li class="nav-item client-list-item" *ngFor="let client of clientList">
-      <img [src]="client.img" [alt]="client.name">
-    </li>
-  </ul>
 </section>

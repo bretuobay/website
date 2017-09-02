@@ -1,0 +1,56 @@
+.jumbotron {
+  background-color: #212428;
+  color: white;
+  .latest-news {
+    .heading {
+      i.border-before,
+      i.border-after {
+        margin-top: 10px;
+        height: 1px;
+        width: 20px;
+        position: relative;
+        display: block;
+        background-color: #aaa;
+      }
+      i.border-before {
+        left: -2rem;
+      }
+      i.border-after {
+        right: -2rem;
+      }
+    }
+    .news-list {
+      margin-top: 3rem;
+      .news-list-item {
+        img {
+          width: inherit;
+        }
+        .news-title {
+          margin-top: 2rem;
+        }
+        .news-heading {
+          margin: 1rem auto;
+          font-weight: 100;
+          min-height: 150px;
+        }
+        .read-more {
+          text-decoration: none;
+          color: white;
+          font-weight: 100;
+          .visit-link-arrow {
+            font-size: 1.1rem;
+            transition: transform 300ms;
+            vertical-align: middle;
+            margin-left: 1rem;
+            font-weight: 100;
+          }
+          &:hover {
+            .visit-link-arrow {
+              transform: translateX(60%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
