@@ -1,4 +1,11 @@
 .case-card {
+  cursor: pointer;
+  @media (max-width: 576px) {
+    height: 350px;
+    .case-img {
+      height: 330px;
+    }
+  }
   height: 300px;
   overflow: hidden;
   margin-bottom: 1rem;
@@ -9,6 +16,9 @@
   &:hover {
     border: 1px solid #666;
     box-shadow: 0 0 15px #888;
+    .visit-link-arrow {
+      transform: translateX(100%);
+    }
   }
 
   .case-detail {
@@ -26,5 +36,12 @@
     height: 270px;
     position: relative;
     top: 2rem;
+  }
+
+  .visit-link-arrow {
+    position: relative;
+    bottom: 2rem;
+    font-size: 1.3rem;
+    transition: transform 300ms;
   }
 }
