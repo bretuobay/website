@@ -1,5 +1,8 @@
 .jumbotron {
   background-color: white;
+  @media (max-width: 576px) {
+    padding-bottom: 2rem;
+  }
   .worked-with {
     .heading {
       i.border-before, i.border-after {

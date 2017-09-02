@@ -1,5 +1,6 @@
 .jumbotron {
   @media (max-width: 576px) {
+    margin-bottom: -1rem;
     aw-case-study {
       /deep/ .case-card {
         margin: -1rem -1rem 1rem -1rem;
