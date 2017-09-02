@@ -1,7 +1,8 @@
 .jumbotron {
   background: white;
-  .about-us-text {
-    text-align: justify;
+  // .about-us-text {}
+  @media (max-width: 576px) {
+    padding-bottom: 3rem;
   }
   .nav {
     @media (max-width: 576px) {
@@ -16,7 +17,7 @@
           padding-bottom: 5px;
           border-bottom: 2px solid white;
           @media (max-width: 576px) {
-            font-size: 0.8rem;
+            font-size: 0.6rem;
           }
         }
         &:hover,
@@ -27,8 +28,10 @@
           }
         }
         img {
-          width: 5vw;
-          height: 5vw;
+          width: 7vw;
+          height: 7vw;
+          max-height: 64px;
+          max-width: 64px;
         }
       }
       .tab-title {
