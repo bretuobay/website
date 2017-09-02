@@ -2,9 +2,6 @@
   cursor: pointer;
   @media (max-width: 576px) {
     height: 350px;
-    .case-img {
-      height: 330px;
-    }
   }
   height: 300px;
   overflow: hidden;
@@ -30,18 +27,33 @@
       margin-top: 0.8rem;
       line-height: 1.5;
     }
+    @media (max-width: 576px) {
+      strong {
+        font-size: 1rem;
+      }
+      h4 {
+        font-size: 1.2rem;
+      }
+    }
   }
 
   .case-img {
-    height: 270px;
+    height: 300px;
     position: relative;
     top: 2rem;
+    @media (max-width: 576px) {
+      height: 250px;
+      margin-left: 2.5rem;
+    }
   }
 
   .visit-link-arrow {
     position: relative;
-    bottom: 2rem;
+    bottom: 3rem;
     font-size: 1.3rem;
     transition: transform 300ms;
+    @media (max-width: 576px) {
+      bottom: 5rem;
+    }
   }
 }
