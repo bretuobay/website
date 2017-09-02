@@ -12,4 +12,64 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
   }
 
+  get services() {
+    return [
+      {
+        name: 'Design',
+        link: '/services/design'
+      },
+      {
+        name: 'Engineering',
+        link: '/services/engineering'
+      },
+      {
+        name: 'Technology',
+        link: '/services/technology'
+      },
+      {
+        name: 'Support',
+        link: '/services/support'
+      }
+    ];
+  }
+
+  get capabilities() {
+    return [
+      {
+        name: 'Angular',
+        link: '/angular-consulting'
+      },
+      {
+        name: 'Ruby on Rails',
+        link: '/ror-consulting'
+      },
+      {
+        name: 'Elixir/Phoenix',
+        link: '/angular-consulting'
+      }
+    ];
+  }
+
+  get company() {
+    return [
+      {
+        name: 'Press',
+        link: '/press'
+      },
+      {
+        name: 'Join Us',
+        link: '/join-us'
+      }
+    ];
+  }
+
+  get connects() {
+    return [
+      {
+        name: 'Github',
+        link: 'https://github.com/aviabird'
+      }
+    ];
+  }
+
 }

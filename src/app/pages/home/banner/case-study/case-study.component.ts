@@ -6,7 +6,14 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./case-study.component.scss']
 })
 export class CaseStudyComponent implements OnInit {
-  @Input() caseStudy: Object;
+  @Input() caseStudy: {
+    name: string,
+    color: {bg: string, text: string},
+    url: string;
+    heading: string,
+    img: string,
+    link: string
+  };
 
   constructor() { }
 

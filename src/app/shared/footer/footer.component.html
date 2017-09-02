@@ -5,6 +5,44 @@
         <h4>Like what you see?</h4>
         <aw-lets-build-btn></aw-lets-build-btn>
       </div>
+      <div class="col-8">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <ul class="list-group">
+                <strong>Services</strong>
+                <li class="list-group-item" *ngFor="let service of services">
+                  <a [routerLink]="service.link">{{service.name}}</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-group">
+                <strong>Capabilities</strong>
+                <li class="list-group-item" *ngFor="let capability of capabilities">
+                  <a [routerLink]="capability.link">{{capability.name}}</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-group">
+                <strong>Company</strong>
+                <li class="list-group-item" *ngFor="let comp of company">
+                  <a [routerLink]="comp.link">{{comp.name}}</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-group">
+                <strong>Connect</strong>
+                <li class="list-group-item" *ngFor="let connect of connects">
+                  <a href="{{connect.link}}">{{connect.name}}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
       class="contact-btn btn btn-outline-dark btn-lg"
     >Let’s build together</button>`,
   styles: [`
+    :host {
+      display: block;
+    }
     .contact-btn {
       border-radius: 0;
       border-width: 2px;
