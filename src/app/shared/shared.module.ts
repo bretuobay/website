@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { LetsBuildBtnComponent } from './lets-build-btn/lets-build-btn.component';
+import { ReadMoreLinkComponent } from './read-more-link/read-more-link.component';
 
 @NgModule({
   imports: [
@@ -12,12 +12,12 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
     BsDropdownModule.forRoot()
   ],
   declarations: [
-    HeaderComponent,
-    FooterComponent
+    LetsBuildBtnComponent,
+    ReadMoreLinkComponent
   ],
   exports: [
-    HeaderComponent,
-    FooterComponent
+    LetsBuildBtnComponent,
+    ReadMoreLinkComponent
   ]
 })
 export class SharedModule { }

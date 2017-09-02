@@ -5,11 +5,7 @@
       <div class="col-12 col-md-7 col-lg-7">
         <aw-case-study
           *ngFor="let case of caseStudy"
-          [name]="case.name"
-          [img]="case.img"
-          [heading]="case.heading"
-          [color]="case.color"
-        ></aw-case-study>
+          [caseStudy]="case"></aw-case-study>
       </div>
     </div>
   </div>

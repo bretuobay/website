@@ -1,0 +1,17 @@
+.read-more {
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  .visit-link-arrow {
+    font-size: 1.1rem;
+    transition: all 300ms;
+    vertical-align: middle;
+    margin-left: 1rem;
+    font-weight: 100;
+  }
+  &:hover {
+    .visit-link-arrow {
+      transform: translateX(150%) scale(1.3);
+    }
+  }
+}

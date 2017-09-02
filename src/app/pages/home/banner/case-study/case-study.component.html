@@ -1,14 +1,14 @@
-<div class="case-card" [ngStyle]="{'background-color': color.bg}">
+<div class="case-card" [ngStyle]="{'background-color': caseStudy.color.bg}">
   <div class="container">
     <div class="row">
       <div class="col case-detail">
-        <strong [style.color]="color.text">{{name | uppercase}}</strong>
-        <h4>{{heading}}</h4>
+        <strong [style.color]="caseStudy.color.text">{{caseStudy.name | uppercase}}</strong>
+        <h4>{{caseStudy.heading}}</h4>
+        <aw-read-more-link isExternalLink="false" link="{{caseStudy.link}}"></aw-read-more-link>
       </div>
       <div class="col-12 col-md-7 col-lg-7">
-        <img class="case-img" [src]="img" alt="name">
+        <img class="case-img" [src]="caseStudy.img" alt="caseStudy.name">
       </div>
     </div>
-    <i class="visit-link-arrow fa fa-chevron-right" aria-hidden="true"></i>
   </div>
 </div>

@@ -10,10 +10,12 @@ import { WorkedWithComponent } from './worked-with/worked-with.component';
 import { LatestNewsComponent } from './latest-news/latest-news.component';
 import { RouterModule } from '@angular/router/';
 import { routing } from './home.routing';
+import { SharedModule } from 'app/shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
+    SharedModule,
     routing
   ],
   declarations: [

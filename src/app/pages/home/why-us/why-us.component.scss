@@ -16,8 +16,12 @@
     &:hover {
       border: 1px solid #666;
       box-shadow: 0 0 15px #888;
-      .visit-link-arrow {
-        transform: translateX(100%);
+      aw-read-more-link {
+        /deep/ .read-more {
+          .visit-link-arrow {
+            transform: translateX(100%) scale(1.3);
+          }
+        }
       }
     }
     @media (max-width: 576px) {
@@ -45,13 +49,11 @@
         }
       }
     }
-    .visit-link-arrow {
-      position: absolute;
-      bottom: 2rem;
-      font-size: 1.3rem;
-      transition: transform 300ms;
-      @media (max-width: 576px) {
-        bottom: 5rem;
+    aw-read-more-link {
+      /deep/ .read-more {
+        color: black;
+        position: absolute;
+        bottom: 1rem;
       }
     }
   }

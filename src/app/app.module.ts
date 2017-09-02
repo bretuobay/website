@@ -6,16 +6,20 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { routing } from 'app/app.routing';
+import { HeaderComponent } from 'app/shared/header/header.component';
+import { FooterComponent } from 'app/shared/footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
     SharedModule,
+    HttpModule,
     routing
   ],
   providers: [],

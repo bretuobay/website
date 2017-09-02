@@ -27,6 +27,8 @@
         }
         img {
           width: inherit;
+          height: 200px;
+          background-color: lightgray;
         }
         .news-title {
           margin-top: 2rem;
@@ -37,23 +39,6 @@
           min-height: 150px;
           @media (max-width: 576px) {
             min-height: 50px;
-          }
-        }
-        .read-more {
-          text-decoration: none;
-          color: white;
-          font-weight: 100;
-          .visit-link-arrow {
-            font-size: 1.1rem;
-            transition: transform 300ms;
-            vertical-align: middle;
-            margin-left: 1rem;
-            font-weight: 100;
-          }
-          &:hover {
-            .visit-link-arrow {
-              transform: translateX(60%);
-            }
           }
         }
       }
