@@ -68,6 +68,18 @@ export class FooterComponent implements OnInit {
       {
         name: 'Github',
         link: 'https://github.com/aviabird'
+      },
+      {
+        name: 'Twitter',
+        link: 'https://twitter.com/avia_bird'
+      },
+      {
+        name: 'LinkedIn',
+        link: 'https://www.linkedin.com/company-beta/13221667'
+      },
+      {
+        name: 'Facebook',
+        link: 'https://www.facebook.com/aviabird'
       }
     ];
   }
