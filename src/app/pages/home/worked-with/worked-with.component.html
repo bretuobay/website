@@ -1,10 +1,10 @@
-<section class="worked-with">
+<section class="worked-with container">
   <div class="heading row justify-content-center">
     <i class="border-before"></i>
     <h5 class="d-flex justify-content-center">Who we’ve worked with</h5>
     <i class="border-after"></i>
   </div>
-  <ul class="nav nav-pills justify-content-center nav-fill client-list">
+  <ul class="nav nav-pills row justify-content-center nav-fill client-list">
     <li class="nav-item client-list-item" *ngFor="let client of clientList">
       <img [src]="client.img" [alt]="client.name">
     </li>
