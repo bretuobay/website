@@ -1,13 +1,15 @@
 .jumbotron {
   margin-bottom: -1rem;
+  padding-bottom: 1rem;
 
   aw-lets-build-btn {
     margin-top: 2rem;
   }
 
   .list-group {
+    padding-bottom: 1rem;
     .list-group-item {
-      padding: 0.3rem 0;
+      padding: 0.2rem 0;
       background: none;
       border: none;
       a {
@@ -16,5 +18,9 @@
         font-size: 0.9rem;
       }
     }
+  }
+
+  .terms-policy-link {
+    color: #777;
   }
 }
