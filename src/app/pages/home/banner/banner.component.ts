@@ -11,7 +11,7 @@ export class BannerComponent implements OnInit {
       name: 'Groove Packer | case study',
       heading: 'The best warehouse management system',
       img: '/assets/case-study/groovepacker/scan-pack.png',
-      color: {bg: '#73AE0C', text: '#355202'}
+      color: {bg: '#FF9E6A', text: '#AA2525'}
     },
     {
       name: 'Get Blueshift | case study',
