@@ -22,6 +22,9 @@
     .news-list {
       margin-top: 3rem;
       .news-list-item {
+        @media (max-width: 576px) {
+          padding-bottom: 1rem;
+        }
         img {
           width: inherit;
         }
@@ -32,6 +35,9 @@
           margin: 1rem auto;
           font-weight: 100;
           min-height: 150px;
+          @media (max-width: 576px) {
+            min-height: 50px;
+          }
         }
         .read-more {
           text-decoration: none;
