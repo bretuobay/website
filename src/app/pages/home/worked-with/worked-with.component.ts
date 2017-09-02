@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./worked-with.component.scss']
 })
 export class WorkedWithComponent implements OnInit {
+  clientList = [
+    {name: 'My Veeta', img: '/assets/clients/logo/my-veeta.png'},
+    {name: 'Get Blueshift', img: '/assets/clients/logo/blueshift.png'},
+    {name: 'Groovepacker', img: '/assets/clients/logo/groovepacker.png'},
+    {name: 'Max My Wealth', img: '/assets/clients/logo/maxmywealth.png'},
+  ];
 
   constructor() { }
 
