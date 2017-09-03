@@ -30,12 +30,13 @@ nav {
 
   /deep/ .dropdown-menu {
     left: 0 !important;
-    top: 9% !important;
+    top: 0% !important;
+    margin-top: 10%;
     position: fixed;
     width: 100vw;
     background: white;
     border: none;
-    height: 100vh;
+    height: 95vh;
     -webkit-animation: dropdown 400ms;
     animation: dropdown 400ms;
     overflow: auto;
@@ -64,15 +65,15 @@ nav {
 
 @keyframes dropdown {
   0% {
-    top: -1000%;
+    margin-top: -1000%;
     opacity: 0;
   }
   20% {
-    top: 0%;
+    margin-top: 0%;
     opacity: 0.8;
   }
   60% {
-    top: 11%;
+    margin-top: 20%;
     opacity: 1;
   }
 }
