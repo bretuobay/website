@@ -6,7 +6,12 @@
           <img src="/assets/brand/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
           &nbsp; Aviabird
         </a>
-        <div class="btn-group ml-auto" placement="left" dropdown>
+        <div class="btn-group ml-auto"
+          (onShown)="onDropDownShown()"
+          (onHide)="onDropDownHide()"
+          placement="left"
+          dropdown
+        >
           <button dropdownToggle type="button" class="navbar-toggler">
             <span class="navbar-toggler-icon"></span>
           </button>

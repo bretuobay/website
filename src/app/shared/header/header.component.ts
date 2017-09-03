@@ -12,6 +12,14 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  onDropDownShown() {
+    document.getElementById('body').style.overflow = 'hidden';
+  }
+
+  onDropDownHide() {
+    document.getElementById('body').style.overflow = 'auto';
+  }
+
   get navItems() {
     return [
       {url: '/services', name: 'SERVICES'},
