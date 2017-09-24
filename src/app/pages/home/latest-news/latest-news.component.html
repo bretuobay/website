@@ -6,11 +6,14 @@
       <i class="border-after"></i>
     </div>
     <div class="row news-list">
-      <div class="col-12 col-lg-4 news-list-item" *ngFor="let latest of latestNews">
-        <img [src]="latest.img" alt="latest.heading">
+      <div class="col-12 col-lg-4 news-list-item"
+        *ngFor="let latest of rssFeeds$ | async | slice:0:3"
+      >
+        <h6 class="date">{{latest.pubDate | date: 'dd MMM'}}</h6>
+        <img [src]="blogImg(latest.description)" alt="latest.title">
         <h6 class="news-title">{{latest.title}}</h6>
-        <h4 class="news-heading">{{latest.heading}}</h4>
-        <aw-read-more-link isExternalLink="true" link="{{latest.url}}"></aw-read-more-link>
+        <h4 class="news-heading">{{parseHeading(latest.description) }}</h4>
+        <aw-read-more-link isExternalLink="true" link="{{latest.link}}"></aw-read-more-link>
         <hr class="border-white">
       </div>
     </div>

@@ -30,6 +30,15 @@
           height: 200px;
           background-color: lightgray;
         }
+        .date {
+          background-color: rgba(#fdfdfd, 0.5);
+          position: absolute;
+          padding: 10px;
+          text-align: center;
+          font-weight: 500;
+          z-index: 9;
+          color: #2c2c2c;
+        }
         .news-title {
           margin-top: 2rem;
         }
