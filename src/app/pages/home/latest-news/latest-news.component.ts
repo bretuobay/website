@@ -38,4 +38,8 @@ export class LatestNewsComponent implements OnInit {
       .substring(0, 100) + ' ...';
   }
 
+  parseDate(date = '') {
+    return new Date(date);
+  }
+
 }
