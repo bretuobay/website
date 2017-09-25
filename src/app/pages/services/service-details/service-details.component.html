@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col left-col">
+    <h3 class="left-heading">
+      {{service.name}}
+      <i class="border-below"></i>
+    </h3>
+    <p class="left-body">
+      {{service.summary}}
+    </p>
+    <br>
+    <aw-lets-build-btn></aw-lets-build-btn>
+  </div>
+  <div class="col-12 col-md-7 col-lg-7 right-col">
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <img src="/assets/services/large-{{service.icon}}.svg" alt="{{service.name}}">
+      </div>
+    </div>
+
+    <article class="row article" *ngFor="let article of service.articles">
+      <h4 class="title">{{article.title}}</h4>
+      <p class="summary">{{article.summary}}</p>
+    </article>
+
+    <div class="row">
+      <ul class="col list-group service-list">
+        <strong>More services</strong>
+        <br>
+        <li [routerLink]="service.link" *ngFor="let service of services" class="list-group-item">
+          <img src="/assets/services/{{service.icon}}.svg" alt="{{service.name}}">
+          {{service.name}}
+          <i class="visit-link-arrow fa fa-chevron-right" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
