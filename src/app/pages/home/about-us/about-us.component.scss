@@ -4,6 +4,9 @@
   @media (max-width: 576px) {
     padding-bottom: 3rem;
   }
+  /deep/ .read-more {
+    color: black;
+  }
   .nav {
     @media (max-width: 576px) {
       box-shadow: 0 0 5px #aaa;

@@ -1,3 +1,4 @@
+import { DataService } from './shared/services/data.service';
 import { SharedModule } from './shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -27,7 +28,7 @@ import 'rxjs/add/observable/of';
     HttpModule,
     routing
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

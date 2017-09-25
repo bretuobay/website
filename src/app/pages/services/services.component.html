@@ -1,3 +1,25 @@
-<p>
-  services works!
-</p>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col left-col">
+        <h1 class="left-heading">How we can help</h1>
+        <p class="left-body">
+          Whether you need a full stack engagement, staff augmentation,
+          training, code/UX audits, design, or user experience testing
+          we offer services that can take your project to the next level.
+        </p>
+      </div>
+      <div class="col-12 col-md-7 col-lg-7">
+        <ul class="list-group service-list">
+          <strong>What we can do for you</strong>
+          <br>
+          <li *ngFor="let service of services" class="list-group-item">
+            <img src="/assets/services/{{service.icon}}.svg" alt="{{service.name}}">
+            {{service.name}}
+            <i class="visit-link-arrow fa fa-chevron-right" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

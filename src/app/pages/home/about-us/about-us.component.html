@@ -14,7 +14,6 @@
           <li class="nav-item tab-nav-item" *ngFor="let service of services">
             <a class="nav-link"
               [ngClass]="{active: selectedService.name == service.name}"
-              [routerLink]="service.link"
               (click)="onSelectService(service)"
             >
               <img src="/assets/services/{{service.icon}}.svg" alt="{{service.name}}">
@@ -38,9 +37,8 @@
           </div>
           <div class="row">
             <div class="col-lg-5 col-md-6"></div>
-            <div [routerLink]="selectedService.link" class="col-md-6 col-lg-7 align-self-end">
-              Read More
-              <i class="visit-link-arrow fa fa-chevron-right" aria-hidden="true"></i>
+            <div class="col-md-6 col-lg-7 align-self-end">
+              <aw-read-more-link [isExternalLink]="false" route="{{selectedService.link}}"></aw-read-more-link>
             </div>
           </div>
         </div>
