@@ -15,6 +15,12 @@ import { Component, OnInit } from '@angular/core';
       border-radius: 0;
       border-width: 2px;
       margin-bottom: 1rem;
+      transition: all 500ms;
+      cursor: pointer;
+    }
+    .contact-btn:hover {
+      box-shadow: 0 10px 20px #aaa;
+      transform: scale(1.05);
     }`
   ]
 })

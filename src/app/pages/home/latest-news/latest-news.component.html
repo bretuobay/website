@@ -6,8 +6,9 @@
       <i class="border-after"></i>
     </div>
     <div class="row news-list">
-      <div class="col-12 col-lg-4 news-list-item"
+      <a class="col-12 col-lg-4 news-list-item"
         *ngFor="let latest of rssFeeds$ | async | slice:0:3"
+        [href]="latest.link" target="_blank"
       >
         <h6 class="date">
           {{parseDate(latest.pubDate).getDate()}}
@@ -19,7 +20,7 @@
         <p class="news-heading" [innerHtml]="parseHeading(latest.description)"></p>
         <aw-read-more-link isExternalLink="true" link="{{latest.link}}"></aw-read-more-link>
         <hr class="border-white">
-      </div>
+      </a>
     </div>
   </div>
 </section>
