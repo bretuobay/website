@@ -71,3 +71,19 @@
 
   }
 }
+
+.jumbotron.services {
+  background: white;
+  /deep/ .read-more {
+    color: black;
+  }
+  .list-services {
+    .list-service {
+      padding: 3rem 0;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

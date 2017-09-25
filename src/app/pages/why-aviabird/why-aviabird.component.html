@@ -6,10 +6,8 @@
           The right team for the job
         </h1>
         <p class="para">
-          We understand the challenges faced when embracing
-          new technology and tools. With this in mind, our
-          expert team takes pride in ensuring you’re set up
-          for success.
+          We understand the challenges faced when embracing new technology and tools. With this in mind, our expert team takes pride
+          in ensuring you’re set up for success.
         </p>
       </div>
     </div>
@@ -18,9 +16,7 @@
       <div class="col-12 col-md-4 col-lg-5">
         <h3 class="header">Pioneering the field</h3>
         <p class="para">
-          We provide access to the best resources at all
-          times because we innovate every year to push core
-          technologies forward.
+          We provide access to the best resources at all times because we innovate every year to push core technologies forward.
         </p>
       </div>
       <div class="col-12 col-md-8 col-lg-7">
@@ -32,9 +28,8 @@
       <div class="col-12 col-md-4 col-lg-5 d-md-none d-lg-none">
         <h3 class="header">High quality project management and execution</h3>
         <p class="para">
-          Our integrated approach allows us to solve problems
-          quickly with stability and maintainability, ensuring your project
-          is on time and within budget.
+          Our integrated approach allows us to solve problems quickly with stability and maintainability, ensuring your project is
+          on time and within budget.
         </p>
       </div>
       <div class="col-12 col-md-8 col-lg-7">
@@ -43,10 +38,38 @@
       <div class="col-12 col-md-4 col-lg-5 hide-mobile">
         <h3 class="header">High quality project management and execution</h3>
         <p class="para">
-          Our integrated approach allows us to solve problems
-          quickly with stability and maintainability, ensuring your project
-          is on time and within budget.
+          Our integrated approach allows us to solve problems quickly with stability and maintainability, ensuring your project is
+          on time and within budget.
         </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid services">
+  <div class="container">
+    <div class="row list-services">
+      <div class="col-12 col-lg-6 list-service" *ngFor="let service of services">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-5 col-md-6">
+              <img src="/assets/services/large-{{service.icon}}.svg" alt="{{service.name}}">
+            </div>
+            <div class="col-12 col-md-6 col-lg-7">
+              <legend>{{service.name}}</legend>
+              <i class="selected-service-text">
+                {{service.summary}}
+              </i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5 col-md-6"></div>
+            <div class="col-md-6 col-lg-7 align-self-end">
+              <br>
+              <aw-read-more-link [isExternalLink]="false" route="{{service.link}}"></aw-read-more-link>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

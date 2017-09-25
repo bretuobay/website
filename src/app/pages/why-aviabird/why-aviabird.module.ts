@@ -2,6 +2,7 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { WhyAviabirdComponent } from './why-aviabird.component';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from '../../shared/shared.module';
 
 const routing: ModuleWithProviders = RouterModule.forChild([
   {path: '', component: WhyAviabirdComponent}
@@ -10,6 +11,7 @@ const routing: ModuleWithProviders = RouterModule.forChild([
 @NgModule({
   imports: [
     CommonModule,
+    SharedModule,
     routing
   ],
   declarations: [WhyAviabirdComponent]

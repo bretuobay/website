@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../shared/services/data.service';
 
 @Component({
   selector: 'aw-why-aviabird',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WhyAviabirdComponent implements OnInit {
 
-  constructor() { }
+  constructor(private data: DataService) { }
 
   ngOnInit() {
   }
+
+  get services() { return this.data.services; }
 
 }
