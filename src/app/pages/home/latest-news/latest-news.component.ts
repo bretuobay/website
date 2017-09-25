@@ -39,7 +39,11 @@ export class LatestNewsComponent implements OnInit {
   }
 
   parseDate(date = '') {
-    return new Date(date);
+    try {
+      return new Date(date.split(' ')[0]);
+    } catch (_) {
+      return new Date();
+    };
   }
 
 }
