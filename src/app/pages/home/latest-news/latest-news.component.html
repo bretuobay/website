@@ -5,9 +5,9 @@
       <h6 class="d-flex justify-content-center">LATEST</h6>
       <i class="border-after"></i>
     </div>
-    <div class="row news-list">
+    <div class="row news-list" *ngIf="rssFeeds$ | async; let rssFeeds; else loading">
       <a class="col-12 col-lg-4 news-list-item"
-        *ngFor="let latest of rssFeeds$ | async | slice:0:3"
+        *ngFor="let latest of rssFeeds | slice:0:3"
         [href]="latest.link" target="_blank"
       >
         <h6 class="date">
@@ -22,5 +22,15 @@
         <hr class="border-white">
       </a>
     </div>
+    <ng-template #loading>
+      <br>
+      <div class="row justify-content-center">
+        <h6 class="text-center col-4">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+          </div>
+        </h6>
+      </div>
+    </ng-template>
   </div>
 </section>
