@@ -16,7 +16,7 @@
         </h6>
         <img [src]="blogImg(latest.description)" alt="latest.title">
         <h6 class="news-title">{{latest.title}}</h6>
-        <h4 class="news-heading">{{parseHeading(latest.description) }}</h4>
+        <p class="news-heading" [innerHtml]="parseHeading(latest.description)"></p>
         <aw-read-more-link isExternalLink="true" link="{{latest.link}}"></aw-read-more-link>
         <hr class="border-white">
       </div>

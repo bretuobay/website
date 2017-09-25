@@ -35,7 +35,7 @@ export class LatestNewsComponent implements OnInit {
       .match(/<p>(?:.*)<\/p>/g)[0]
       .split('<p>')[1]
       .split('</p>')[0]
-      .substring(0, 100) + ' ...';
+      .substring(0, 250) + ' ...';
   }
 
   parseDate(date = '') {
