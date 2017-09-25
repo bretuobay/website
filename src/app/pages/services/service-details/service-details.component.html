@@ -13,13 +13,15 @@
   <div class="col-12 col-md-7 col-lg-7 right-col">
     <div class="row justify-content-center">
       <div class="col-10">
-        <img src="/assets/services/large-{{service.icon}}.svg" alt="{{service.name}}">
+        <img class="large-logo" src="/assets/services/large-{{service.icon}}.svg" alt="{{service.name}}">
       </div>
     </div>
 
     <article class="row article" *ngFor="let article of service.articles">
-      <h4 class="title">{{article.title}}</h4>
-      <p class="summary">{{article.summary}}</p>
+      <div class="col">
+        <h4 class="title">{{article.title}}</h4>
+        <p class="summary">{{article.summary}}</p>
+      </div>
     </article>
 
     <div class="row">

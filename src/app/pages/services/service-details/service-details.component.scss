@@ -32,6 +32,11 @@ i.border-below {
 }
 
 .right-col {
+  .large-logo {
+    @media (max-width: 576px) {
+      margin-top: 3rem;
+    }
+  }
   .article {
     .title {
       margin-top: 2rem;
