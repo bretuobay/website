@@ -25,15 +25,17 @@
     </article>
 
     <div class="row">
-      <ul class="col list-group service-list">
-        <strong>More services</strong>
-        <br>
-        <li [routerLink]="service.link" *ngFor="let service of services" class="list-group-item">
-          <img src="/assets/services/{{service.icon}}.svg" alt="{{service.name}}">
-          {{service.name}}
-          <i class="visit-link-arrow fa fa-chevron-right" aria-hidden="true"></i>
-        </li>
-      </ul>
+      <div class="col">
+        <ul class="list-group service-list">
+          <strong>More services</strong>
+          <br>
+          <li [routerLink]="service.link" *ngFor="let service of services" class="list-group-item">
+            <img src="/assets/services/{{service.icon}}.svg" alt="{{service.name}}">
+            {{service.name}}
+            <i class="visit-link-arrow fa fa-chevron-right" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
