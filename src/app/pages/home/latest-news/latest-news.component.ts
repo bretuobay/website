@@ -1,14 +1,7 @@
+import { DataService } from 'app/shared/services/data.service';
+import { Feed } from './../../../shared/services/data.service';
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
-
-interface Feed {
-  author: string;
-  description: string;
-  pubDate: string;
-  title: string;
-  link: string;
-}
 
 @Component({
   selector: 'aw-latest-news',
@@ -18,12 +11,10 @@ interface Feed {
 export class LatestNewsComponent implements OnInit {
   rssFeeds$: Observable<Array<Feed>>;
 
-  constructor(private http: Http) { }
+  constructor(private data: DataService) { }
 
   ngOnInit() {
-    this.rssFeeds$ = this.http.get(
-      'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/aviabird'
-    ).map(res => res.json().items as Array<Feed>);
+    this.rssFeeds$ = this.data.medium_feeds();
   }
 
   blogImg(description = '') {
