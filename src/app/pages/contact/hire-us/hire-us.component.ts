@@ -28,7 +28,7 @@ export class HireUsComponent implements OnInit {
       company: [''],
       phone: [''],
       how: [''],
-      budget: ['', Validators.required],
+      budget: ['$10,000 - $50,000', Validators.required],
       message: [''],
     });
   }
