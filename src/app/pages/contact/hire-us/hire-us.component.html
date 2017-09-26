@@ -1,3 +1,89 @@
-<p>
-  hire-us works!
-</p>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="row main">
+      <div class="col-12 col-md-8 col-lg-6">
+        <h1 class="header">
+          Let’s build something great together
+        </h1>
+        <p class="para">
+          Whatever your ambition, we’d love to design and build your next big idea or lend a hand on an existing one.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid form">
+  <div class="container">
+    <div class="row main">
+      <div class="col-lg-2 col-md-1 d-sm-hidden"></div>
+      <div class="col-12 col-md-10 col-lg-8">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="contactName"><b>What is your name?</b></label>
+            <input id="contactName" formControlName="name" class="form-control form-control-lg" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="contactEmail"><b>What email address do you use?</b></label>
+            <input id="contactEmail" formControlName="email" class="form-control form-control-lg" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="contactCompany"><b>What is your company's name? </b><span>(optional)</span></label>
+            <input id="contactCompany" formControlName="company" class="form-control form-control-lg" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="contactPhone"><b>What is your phone number? </b><span>(optional)</span></label>
+            <input id="contactPhone" formControlName="phone" class="form-control form-control-lg" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="contactHow"><b>How did you find us? </b><span>(optional)</span></label>
+            <input id="contactHow" formControlName="how" class="form-control form-control-lg" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="contactBudget"><b>What is your budget?</b></label>
+            <select formControlName="budget" class="form-control form-control-lg" id="contactBudget">
+              <option value="" disabled="">
+                  Select one...
+              </option>
+              <option value="Less than $10,000">
+                Less than $10,000
+              </option>
+              
+              <option value="$10,000 - $50,000">
+                $10,000 - $50,000
+              </option>
+              
+              <option value="$50,000 - $100,000">
+                $50,000 - $100,000
+              </option>
+              
+              <option value="$100,000 - $250,000">
+                $100,000 - $250,000
+              </option>
+              
+              <option value="$250,000 - $500,000">
+                $250,000 - $500,000
+              </option>
+              
+              <option value="More than $500,000">
+                More than $500,000
+              </option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contactMsg"><b>How can we help? </b><span>(optional)</span></label>
+            <textarea id="contactMsg" formControlName="message" class="form-control form-control-lg" rows="3"></textarea>
+          </div>
+
+          <button class="contact-btn btn btn-outline-dark btn-lg" [disabled]="form.invalid" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

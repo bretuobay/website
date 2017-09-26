@@ -8,7 +8,7 @@ const routes: Route[] = [
   // { loadChildren: './pages/work/work.module#WorkModule', path: 'work' },
   { loadChildren: './pages/why-aviabird/why-aviabird.module#WhyAviabirdModule', path: 'why-aviabird' },
   // { loadChildren: './pages/blog/blog.module#BlogModule', path: 'blog' },
-  // { loadChildren: './pages/contact/contact.module#ContactModule', path: 'contact' },
+  { loadChildren: './pages/contact/contact.module#ContactModule', path: 'contact' },
 ];
 
 export const routing: ModuleWithProviders =
