@@ -1,0 +1,61 @@
+.jumbotron {
+  &.main {
+    margin-bottom: -1rem;
+    background-image: url("/assets/blog/header.png");
+    padding-bottom: 2rem;
+    padding-top: 8rem;
+    background-size: cover;
+    background-position: center;
+    .header {
+      font-size: 3.5rem;
+      color: #333;
+      font-weight: bold;
+    }
+  }
+  &.menu {
+    background: white;
+    margin-bottom: 0rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  &.body{
+    background: white;
+  }
+}
+
+.list-group.blog-list {
+  .list-group-item {
+    transition: all 500ms;
+    cursor: pointer;
+    &:hover {
+      .visit-link-arrow {
+        transform: translateX(0%);
+        opacity: 1;
+      }
+    }
+    &:focus {
+      outline: none;
+    }
+    border: none;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-radius: 0px !important;
+    font-size: 1.4rem;
+    font-weight: 200;
+    img {
+      height: 3rem;
+      margin: 1rem 1rem 1rem 0;
+    }
+    .visit-link-arrow {
+      right: 1%;
+      transform: translateX(-200%);
+      opacity: 0;
+      transition: all 400ms ease-in-out;
+      position: absolute;
+      top: 34%;
+      font-size: 2.3rem;
+      color: black;
+    }
+  }
+}
