@@ -4,10 +4,12 @@ import { CommonModule } from '@angular/common';
 import { HireUsComponent } from './hire-us/hire-us.component';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ThankYouComponent } from './thank-you/thank-you.component';
 
 const routing: ModuleWithProviders = RouterModule.forChild([
   {path: '', redirectTo: 'hire-us'},
-  {path: 'hire-us', component: HireUsComponent}
+  {path: 'hire-us', component: HireUsComponent},
+  {path: 'hire-us/thank-you', component: ThankYouComponent}
 ]);
 
 @NgModule({
@@ -17,6 +19,6 @@ const routing: ModuleWithProviders = RouterModule.forChild([
     ReactiveFormsModule,
     routing
   ],
-  declarations: [HireUsComponent]
+  declarations: [HireUsComponent, ThankYouComponent]
 })
 export class ContactModule { }
