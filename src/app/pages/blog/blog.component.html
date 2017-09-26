@@ -1,7 +1,7 @@
 <div class="jumbotron jumbotron-fluid main">
   <div class="container">
     <div class="row main">
-      <div class="col-12 col-md-10 col-lg-8">
+      <div class="col-12">
         <h1 class="header">
           ReefPoint
         </h1>
@@ -12,20 +12,22 @@
 <div class="jumbotron jumbotron-fluid menu">
   <div class="container">
     <div class="row">
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" href="https://medium.com/aviabird">All Posts</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://medium.com/aviabird/tagged/angular2">Angular</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://medium.com/aviabird/tagged/ruby-on-rails">Ruby on Rails</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://medium.com/aviabird/tagged/elixir">Elixir</a>
-        </li>
-      </ul>
+      <div class="col">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="https://medium.com/aviabird">All Posts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://medium.com/aviabird/tagged/angular2">Angular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://medium.com/aviabird/tagged/ruby-on-rails">Rails</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://medium.com/aviabird/tagged/elixir">Elixir</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
@@ -34,11 +36,18 @@
     <div class="row">
       <ul class="list-group blog-list">
         <li class="list-group-item" *ngFor="let latest of rssFeeds">
-          <h2>
+          <h2 class="header">
             <a [href]="latest.link">{{latest.title}}</a>
           </h2>
-          <p [innerHtml]="parseHeading(latest.description)">{{latest.description}}</p>
-          By : <span>{{latest.author}} &#8226; {{parseDate(latest.pubDate).toDateString()}}</span> 
+          <p class="desc" [innerHtml]="parseHeading(latest.description)">
+            {{latest.description}}
+          </p>
+          <p class="detail">
+            By : 
+            <span class="author">{{latest.author}}</span>
+            &#8226;
+            <span class="pub-date">{{parseDate(latest.pubDate).toDateString()}}</span> 
+          </p>
         </li>
       </ul>
     </div>
