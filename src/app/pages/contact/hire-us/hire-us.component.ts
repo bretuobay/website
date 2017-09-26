@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AngularFireDatabase } from 'angularfire2/database';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'aw-hire-us',
@@ -9,7 +10,11 @@ import { AngularFireDatabase } from 'angularfire2/database';
 })
 export class HireUsComponent implements OnInit {
   form: FormGroup;
-  constructor(private fb: FormBuilder, private database: AngularFireDatabase) {
+  constructor(
+    private fb: FormBuilder,
+    private database: AngularFireDatabase,
+    private router: Router
+  ) {
     this.createForm();
   }
 
@@ -52,6 +57,7 @@ export class HireUsComponent implements OnInit {
 
     this.database.list('/messages').push(formRequest);
     this.form.reset();
+    this.router.navigate(['/contact/hire-us/thank-you']);
   }
 
 }
