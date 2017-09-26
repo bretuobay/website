@@ -37,11 +37,11 @@ exports.sendContactMessage = functions.database.ref('/messages/{pushKey}').onWri
   const val = snapshot.val();
   
   const mailOptions = {
-    to: 'pankaj@aviabird.com',
+    to: 'hello@aviabird.com',
     subject: `Information Request from ${val.name}`,
     html: val.html
   };
   return mailTransport.sendMail(mailOptions).then(() => {
-    return console.log('Mail sent to: pankaj@aviabird.com')
+    return console.log('Mail sent to: hello@aviabird.com')
   });
 });
