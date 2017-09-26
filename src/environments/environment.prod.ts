@@ -1,11 +1,13 @@
+import { ENV } from './../../env';
+
 export const environment = {
   production: true,
-  // firebase: {
-  //   apiKey: process.env.FIREBASE_KEY,
-  //   authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-  //   databaseURL: process.env.DATABASE_URL,
-  //   storageBucket: process.env.STORAGE_BUCKET,
-  //   projectId: process.env.PROJECT_ID,
-  //   messagingSenderId: process.env.MESSAGING_SENDERID,
-  // }
+  firebase: {
+    apiKey: ENV.FIREBASE_KEY,
+    authDomain: ENV.FIREBASE_AUTH_DOMAIN,
+    databaseURL: ENV.DATABASE_URL,
+    storageBucket: ENV.STORAGE_BUCKET,
+    projectId: ENV.PROJECT_ID,
+    messagingSenderId: ENV.MESSAGING_SENDERID,
+  }
 };

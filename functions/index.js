@@ -38,7 +38,7 @@ exports.sendContactMessage = functions.database.ref('/messages/{pushKey}').onWri
   
   const mailOptions = {
     to: 'hello@aviabird.com',
-    subject: `Information Request from ${val.name}`,
+    subject: `Alert! New Message from Aviabird.com  ${val.name}`,
     html: val.html
   };
   return mailTransport.sendMail(mailOptions).then(() => {
