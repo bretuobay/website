@@ -32,24 +32,26 @@
   </div>
 </div>
 <div class="jumbotron jumbotron-fluid body">
-  <div class="container" *ngIf="rssFeeds$ | async; let rssFeeds; else loading">
-    <div class="row">
-      <ul class="list-group blog-list">
-        <li class="list-group-item" *ngFor="let latest of rssFeeds">
-          <h2 class="header">
-            <a [href]="latest.link">{{latest.title}}</a>
-          </h2>
-          <p class="desc" [innerHtml]="parseHeading(latest.description)">
-            {{latest.description}}
-          </p>
-          <p class="detail">
-            By : 
-            <span class="author">{{latest.author}}</span>
-            &#8226;
-            <span class="pub-date">{{parseDate(latest.pubDate).toDateString()}}</span> 
-          </p>
-        </li>
-      </ul>
+  <div class="" *ngIf="rssFeeds$ | async; let rssFeeds; else loading">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-7">
+        <ul class="list-group blog-list">
+          <li class="list-group-item" *ngFor="let latest of rssFeeds">
+            <h2 class="header">
+              <a [href]="latest.link">{{latest.title}}</a>
+            </h2>
+            <p class="desc" [innerHtml]="parseHeading(latest.description)">
+              {{latest.description}}
+            </p>
+            <p class="detail">
+              By : 
+              <span class="author">{{latest.author}}</span>
+              &#8226;
+              <span class="pub-date">{{parseDate(latest.pubDate).toDateString()}}</span> 
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   <ng-template #loading>
