@@ -10,6 +10,8 @@ import { Router } from '@angular/router';
 })
 export class HireUsComponent implements OnInit {
   form: FormGroup;
+  showAlert = false;
+
   constructor(
     private fb: FormBuilder,
     private database: AngularFireDatabase,
@@ -34,6 +36,8 @@ export class HireUsComponent implements OnInit {
   }
 
   onSubmit() {
+    if (this.form.invalid) { return this.showAlert = true; }
+
     const {
       name, email, company, phone, how, budget, message
     } = this.form.value;
