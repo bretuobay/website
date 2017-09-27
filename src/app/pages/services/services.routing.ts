@@ -13,8 +13,7 @@ const routes: Route[] = [
     path: '',
     component: ServicesComponent,
     children: [
-      { path: '', pathMatch: 'full', redirectTo: 'home' },
-      {path: 'home', component: ServicesHomeComponent},
+      {path: '', component: ServicesHomeComponent},
       {path: 'design', component: DesignComponent},
       {path: 'engineering', component: EngineeringComponent},
       {path: 'technology', component: TechnologyComponent},
