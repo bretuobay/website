@@ -2,7 +2,6 @@
   background-color: #F8F8F8;
   margin-bottom: -5rem;
   min-height: 50vh;
-
   .main {
     margin-top: 2rem;
     .header {
@@ -15,7 +14,6 @@
       font-size: 1.4rem;
       font-weight: 300;
     }
-
     @media (max-width: 992px) {
       padding-bottom: 3rem;
       .header {
@@ -25,37 +23,39 @@
         font-size: 1rem;
       }
     }
-
     @media (max-width: 552px) {
-      .header, .para {
+      .header,
+      .para {
         text-align: center;
       }
     }
-
     padding-bottom: 5rem;
   }
 }
 
 .jumbotron.form {
   background: white;
-
   form {
-
     .form-group {
-      .form-control-lg {
-        padding: 1rem 1rem;
+      input.form-control-lg,
+      select.form-control-lg {
+        height: 4rem;
         margin-bottom: 2rem;
         border-radius: 0;
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           border: 1px solid #222;
         }
+      }
+      textarea {
+        border-radius: 0;
+        margin-bottom: 2rem;
       }
       label span {
         color: #aeaeae;
         font-weight: 100;
       }
     }
-
     .contact-btn {
       width: 10rem;
       border-radius: 0;
@@ -74,5 +74,4 @@
       transform: scale(1.02);
     }
   }
-
 }

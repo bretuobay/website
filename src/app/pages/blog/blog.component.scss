@@ -57,6 +57,9 @@
 
     .header a {
       color: #333;
+      @media (max-width: 552px) {
+        font-size: 1.2rem;
+      }
       &:visited {
         color: #606467;
       }
