@@ -1,3 +1,6 @@
 :host {
   overflow-x: hidden;
+  .main {
+    min-height: 60vh;
+  }
 }
