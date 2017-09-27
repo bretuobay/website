@@ -1,4 +1,4 @@
-import { RouterModule, Route } from '@angular/router';
+import { RouterModule, Route, PreloadAllModules } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 
 const routes: Route[] = [
@@ -12,4 +12,4 @@ const routes: Route[] = [
 ];
 
 export const routing: ModuleWithProviders =
-RouterModule.forRoot(routes);
+RouterModule.forRoot(routes, {preloadingStrategy: PreloadAllModules});
