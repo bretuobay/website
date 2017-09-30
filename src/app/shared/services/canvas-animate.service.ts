@@ -5,11 +5,11 @@ import Circle from './models/circle';
 export class CanvasAnimateService {
   circleArray: Array<Circle> = [];
   colorArray = [
-    '#2C3E50',
-    '#E74C3C',
-    '#ECF0F1',
-    '#3498DB',
-    '#2980B9'
+    '44, 62, 80',
+    '231, 76, 60',
+    '241, 224, 152',
+    '52, 152, 219',
+    '41, 128, 185'
   ];
 
   constructor() { }
@@ -20,8 +20,8 @@ export class CanvasAnimateService {
       const fillColor = this.getRndColor();
       const circle = new Circle(context, x, y, dx, dy, radius, fillColor);
       this.circleArray.push(circle);
-      this.animateCircle(context);
     }
+    this.animateCircle(context);
   }
 
   private randomCircleConf() {
@@ -45,7 +45,8 @@ export class CanvasAnimateService {
   }
 
   getRndColor() {
-    return this.colorArray[Math.floor(Math.random() * this.colorArray.length)];
+    const color = this.colorArray[Math.floor(Math.random() * this.colorArray.length)];
+    return `rgba(${color}, ${Math.random()})`;
   }
 
 }
