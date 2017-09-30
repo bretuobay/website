@@ -1,3 +1,5 @@
+import { CanvasAnimateService } from './services/canvas-animate.service';
+import { DataService } from 'app/shared/services/data.service';
 import { FooterComponent } from 'app/shared/footer/footer.component';
 import { HeaderComponent } from 'app/shared/header/header.component';
 import { NgModule } from '@angular/core';
@@ -31,6 +33,10 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     ReadMoreLinkComponent,
     HeaderComponent,
     FooterComponent
+  ],
+  providers: [
+    DataService,
+    CanvasAnimateService
   ]
 })
 export class SharedModule { }

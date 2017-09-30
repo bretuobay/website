@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { CanvasAnimateService } from './../../../shared/services/canvas-animate.service';
+import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'aw-banner',
   templateUrl: './banner.component.html',
   styleUrls: ['./banner.component.scss']
 })
-export class BannerComponent implements OnInit {
+export class BannerComponent implements OnInit, AfterViewInit {
   caseStudy = [
     {
       name: 'Groove Packer | case study',
@@ -23,9 +24,19 @@ export class BannerComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor(
+    private elementRef: ElementRef,
+    private canvasAnimate: CanvasAnimateService
+  ) { }
 
   ngOnInit() {
   }
 
+  ngAfterViewInit() {
+    const canvas = this.elementRef.nativeElement.querySelector('canvas');
+    const context = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight / 4;
+    this.canvasAnimate.addCircleAnimation(context);
+  }
 }
