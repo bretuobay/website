@@ -14,7 +14,7 @@ export class CanvasAnimateService {
 
   constructor() { }
 
-  addCircleAnimation(context, nCircles = 100) {
+  addCircleAnimation(context, nCircles = 50) {
     for (let i = 0; i < nCircles; i++) {
       const {x, y, dx, dy, radius} = this.randomCircleConf();
       const fillColor = this.getRndColor();

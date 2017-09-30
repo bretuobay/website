@@ -37,6 +37,6 @@ export class BannerComponent implements OnInit, AfterViewInit {
     const context = canvas.getContext('2d') as CanvasRenderingContext2D;
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight - 15;
-    this.canvasAnimate.addCircleAnimation(context);
+    this.canvasAnimate.addCircleAnimation(context, innerWidth / 20);
   }
 }
