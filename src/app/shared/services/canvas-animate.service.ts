@@ -4,6 +4,13 @@ import Circle from './models/circle';
 @Injectable()
 export class CanvasAnimateService {
   circleArray: Array<Circle> = [];
+  colorArray = [
+    '#2C3E50',
+    '#E74C3C',
+    '#ECF0F1',
+    '#3498DB',
+    '#2980B9'
+  ];
 
   constructor() { }
 
@@ -18,10 +25,10 @@ export class CanvasAnimateService {
   }
 
   private randomCircleConf() {
-    const radius = Math.random() * 50;
+    const radius = Math.random() * 10;
     return {
       x: Math.random() * (innerWidth - radius * 2) + radius,
-      y: Math.random() * (innerHeight - radius * 2) + radius,
+      y: Math.random() * (innerHeight - 15 - radius * 2) + radius,
       dx: (Math.random() - 0.5),
       dy: (Math.random() - 0.5),
       radius: radius
@@ -38,10 +45,7 @@ export class CanvasAnimateService {
   }
 
   getRndColor() {
-    const r = Math.round(255 * Math.random()),
-          g = Math.round(255 * Math.random()),
-          b = Math.round(255 * Math.random());
-    return `rgba(${r}, ${g}, ${b}, ${Math.random() * Math.random()})`;
+    return this.colorArray[Math.floor(Math.random() * this.colorArray.length)];
   }
 
 }
