@@ -12,15 +12,15 @@ export class BannerComponent implements OnInit, AfterViewInit {
       name: 'Groove Packer | case study',
       heading: 'The best warehouse management system',
       img: '/assets/case-study/groovepacker/scan-pack.png',
-      color: {bg: '#FF9E6A', text: '#AA2525'},
+      color: {bg: 'rgba(245, 60, 31, 0.7)', text: '#AA2525'},
       link: '/work/groovepacker'
     },
     {
-      name: 'Get Blueshift | case study',
+      name: 'My Veeta | case study',
       heading: 'The best Customer Engagement service',
-      img: '/assets/case-study/blueshift/laptop.png',
-      color: {bg: '#93E9F3', text: '#167884'},
-      link: '/work/blueshift'
+      img: '/assets/case-study/my-veeta/landing.png',
+      color: {bg: 'rgba(140, 255, 249, 0.7)', text: '#167884'},
+      link: '/work/my-veeta'
     }
   ];
 
