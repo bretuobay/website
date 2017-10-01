@@ -47,7 +47,7 @@ export class BlogComponent implements OnInit, AfterViewInit {
     const main = this.elementRef.nativeElement.querySelector('.main');
     canvas.width = main.offsetWidth;
     canvas.height = main.offsetHeight - 15;
-    this.canvasAnimate.addCircleAnimation(context, innerWidth / 20);
+    this.canvasAnimate.addCircleAnimation(context, innerWidth / 10);
   }
 
 }

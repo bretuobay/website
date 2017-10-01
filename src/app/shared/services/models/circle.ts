@@ -25,7 +25,7 @@ export default class Circle {
     if (x + radius > innerWidth  || x - radius < 0) {
       this.dx *= -1;
     }
-    if (y + radius > innerHeight / 4  || y - radius < 0) {
+    if (y + radius > context.canvas.height  || y - radius < 0) {
       this.dy *= -1;
     }
     this.x += this.dx;
