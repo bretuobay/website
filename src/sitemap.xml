@@ -6,24 +6,40 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-<url>
-  <loc>https://aviabird.com/</loc>
-  <lastmod>2017-10-01T14:36:45+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <loc>https://aviabird.com/services</loc>
-  <lastmod>2017-10-01T14:36:45+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <loc>https://aviabird.com/work</loc>
-  <lastmod>2017-10-01T14:36:45+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <loc>https://aviabird.com/why-aviabird/</loc>
-  <lastmod>2017-10-01T14:36:45+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <loc>https://aviabird.com/blog</loc>
-  <lastmod>2017-10-01T14:36:45+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <loc>https://aviabird.com/contact/hire-us</loc>
-  <lastmod>2017-10-01T14:36:45+00:00</lastmod>
-  <changefreq>always</changefreq>
-</url>
+  <url>
+    <loc>https://aviabird.com/</loc>
+    <lastmod>2017-10-01T14:36:45+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url>
+
+  <url>
+    <loc>https://aviabird.com/services</loc>
+    <lastmod>2017-10-01T14:36:45+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url>
+
+  <url>
+    <loc>https://aviabird.com/work</loc>
+    <lastmod>2017-10-01T14:36:45+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url>
+
+  <url>
+    <loc>https://aviabird.com/why-aviabird/</loc>
+    <lastmod>2017-10-01T14:36:45+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url>
+
+  <url>
+    <loc>https://aviabird.com/blog</loc>
+    <lastmod>2017-10-01T14:36:45+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url>
+
+  <url>
+    <loc>https://aviabird.com/contact/hire-us</loc>
+    <lastmod>2017-10-01T14:36:45+00:00</lastmod>
+    <changefreq>always</changefreq>
+  </url>
+
 </urlset>
