@@ -35,8 +35,9 @@ export class BannerComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     const canvas = this.elementRef.nativeElement.querySelector('canvas');
     const context = canvas.getContext('2d') as CanvasRenderingContext2D;
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight - 15;
+    const jumbotron = this.elementRef.nativeElement.querySelector('.jumbotron');
+    canvas.width = jumbotron.offsetWidth;
+    canvas.height = jumbotron.offsetHeight - 50;
     this.canvasAnimate.addCircleAnimation(context, innerWidth / 20);
   }
 }

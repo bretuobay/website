@@ -17,6 +17,11 @@
       font-weight: bold;
       text-align: center;
     }
+    canvas {
+      position: absolute;
+      top: 70px;
+      left: 0;
+    }
   }
   &.menu {
     box-shadow: 0 0 5px #000;

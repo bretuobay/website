@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, NgZone } from '@angular/core';
 import Circle from './models/circle';
 
 @Injectable()
@@ -12,23 +12,25 @@ export class CanvasAnimateService {
     '41, 128, 185'
   ];
 
-  constructor() { }
+  constructor(private zone: NgZone) { }
 
-  addCircleAnimation(context, nCircles = 50) {
-    for (let i = 0; i < nCircles; i++) {
-      const {x, y, dx, dy, radius} = this.randomCircleConf();
-      const fillColor = this.getRndColor();
-      const circle = new Circle(context, x, y, dx, dy, radius, fillColor);
-      this.circleArray.push(circle);
-    }
-    this.animateCircle(context);
+  addCircleAnimation(context: CanvasRenderingContext2D, nCircles = 50) {
+    this.zone.runOutsideAngular(() => {
+      for (let i = 0; i < nCircles; i++) {
+        const {x, y, dx, dy, radius} = this.randomCircleConf(context);
+        const fillColor = this.getRndColor();
+        const circle = new Circle(context, x, y, dx, dy, radius, fillColor);
+        this.circleArray.push(circle);
+      }
+      this.animateCircle(context);
+    })
   }
 
-  private randomCircleConf() {
+  private randomCircleConf(context: CanvasRenderingContext2D) {
     const radius = Math.random() * 10;
     return {
       x: Math.random() * (innerWidth - radius * 2) + radius,
-      y: Math.random() * (innerHeight - 15 - radius * 2) + radius,
+      y: Math.random() * (context.canvas.height - radius * 2) + radius,
       dx: (Math.random() - 0.5),
       dy: (Math.random() - 0.5),
       radius: radius
@@ -37,7 +39,7 @@ export class CanvasAnimateService {
 
   private animateCircle(context: CanvasRenderingContext2D) {
     requestAnimationFrame( _ => this.animateCircle(context));
-    context.clearRect(0, 0, innerWidth, innerHeight);
+    context.clearRect(0, 0, innerWidth, context.canvas.height);
 
     this.circleArray.forEach(circle => {
       circle.update();
