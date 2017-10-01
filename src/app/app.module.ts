@@ -2,6 +2,7 @@ import { SharedModule } from './shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { AppComponent } from './app.component';
 import { routing } from 'app/app.routing';
@@ -23,7 +24,8 @@ import 'rxjs/add/observable/of';
     BrowserModule,
     SharedModule,
     HttpModule,
-    routing
+    routing,
+    BrowserAnimationsModule
   ],
   bootstrap: [AppComponent]
 })

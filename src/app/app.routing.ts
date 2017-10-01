@@ -8,6 +8,8 @@ const routes: Route[] = [
   { loadChildren: './pages/why-aviabird/why-aviabird.module#WhyAviabirdModule', path: 'why-aviabird' },
   { loadChildren: './pages/blog/blog.module#BlogModule', path: 'blog' },
   { loadChildren: './pages/contact/contact.module#ContactModule', path: 'contact' },
+  // otherwise redirect to home
+  { path: '**', redirectTo: '' }
 ];
 
 export const routing: ModuleWithProviders =
