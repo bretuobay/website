@@ -31,8 +31,8 @@ export class CanvasAnimateService {
     return {
       x: Math.random() * (innerWidth - radius * 2) + radius,
       y: Math.random() * (context.canvas.height - radius * 2) + radius,
-      dx: (Math.random() - 0.5) * 2,
-      dy: (Math.random() - 0.5) * 2,
+      dx: (Math.random() - 0.5),
+      dy: (Math.random() - 0.5),
       radius: radius
     };
   }
