@@ -17,7 +17,7 @@ export class BannerComponent implements OnInit, AfterViewInit {
     },
     {
       name: 'My Veeta | case study',
-      heading: 'The best Customer Engagement service',
+      heading: `Find your dream Job`,
       img: '/assets/case-study/my-veeta/landing.png',
       color: {bg: 'rgba(140, 255, 249, 0.7)', text: '#167884'},
       link: '/work/my-veeta'
