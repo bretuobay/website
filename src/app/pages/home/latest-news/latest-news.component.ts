@@ -18,10 +18,18 @@ export class LatestNewsComponent implements OnInit {
   }
 
   blogImg(description = '') {
+    let width = window.innerWidth;
+
+    if (width > 992) {
+      width = 400;
+    } else if (width > 552) {
+      width = Math.floor(width * 0.7);
+    }
+
     return description
       .match(/(?:src=)(?:.*)\"/)[0]
       .split('\"')[1]
-      .replace('max/1024', `max/350`);
+      .replace('max/1024', `max/${width}`);
   }
 
   parseHeading(description = '') {
