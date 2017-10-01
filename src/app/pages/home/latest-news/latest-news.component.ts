@@ -18,7 +18,10 @@ export class LatestNewsComponent implements OnInit {
   }
 
   blogImg(description = '') {
-    return description.match(/(?:src=)(?:.*)\"/)[0].split('\"')[1];
+    return description
+      .match(/(?:src=)(?:.*)\"/)[0]
+      .split('\"')[1]
+      .replace('max/1024', `max/350`);
   }
 
   parseHeading(description = '') {
