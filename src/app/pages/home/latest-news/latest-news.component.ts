@@ -21,7 +21,7 @@ export class LatestNewsComponent implements OnInit {
     let width = window.innerWidth;
 
     if (width > 992) {
-      width = 400;
+      width = 350;
     } else if (width > 552) {
       width = Math.floor(width * 0.7);
     }

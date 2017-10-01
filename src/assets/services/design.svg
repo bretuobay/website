@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  viewBox="0 0 32 32" class="icon-svg icon-services-design-small service-icon">
-  <path d="M19 12.5h2.5v1h-2.5v-1zM19 14.5h2.5v1h-2.5v-1zM19 16.5h2.5v1h-2.5v-1zM19 18.5h2.5v1h-2.5v-1zM-.023 9.066l8.839-8.839.707.707-8.839 8.839-.707-.707zM.575 14.717l14.142-14.142.707.707-14.142 14.142-.707-.707zM5.977 15.066l8.839-8.839.707.707-8.839 8.839-.707-.707z"></path>
-  <path d="M15 0h1v16h-1v-16zM0 0h1v16h-1v-16z"></path>
-  <path d="M0 16v-1h16v1h-16zM0 1v-1h16v1h-16zM31 16h1v16h-1v-16zM16 23h1v9h-1v-9z"></path>
-  <path d="M16 32v-1h16v1h-16zM23 17v-1h9v1h-9z"></path>
-  <path d="M16.575 30.718l14.142-14.142.707.707-14.142 14.142-.707-.707zM17 10h5v1h-5v-1zM10.5 21h11.5v1h-11.5v-1z"></path>
-  <path d="M11 17v5h-1v-5h1zM22 11v11h-1v-11h1z"></path>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg class="icon-svg icon-services-design-small service-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+ <path d="m19 12.5h2.5v1h-2.5v-1zm0 2h2.5v1h-2.5v-1zm0 2h2.5v1h-2.5v-1zm0 2h2.5v1h-2.5v-1zm-19.023-9.434l8.839-8.839 0.707 0.707-8.839 8.839-0.707-0.707zm0.598 5.651l14.142-14.142 0.707 0.707-14.142 14.142-0.707-0.707zm5.402 0.349l8.839-8.839 0.707 0.707-8.839 8.839-0.707-0.707z"/>
+ <path d="m15 0h1v16h-1v-16zm-15 0h1v16h-1v-16z"/>
+ <path d="m0 16v-1h16v1h-16zm0-15v-1h16v1h-16zm31 15h1v16h-1v-16zm-15 7h1v9h-1v-9z"/>
+ <path d="m16 32v-1h16v1h-16zm7-15v-1h9v1h-9z"/>
+ <path d="m16.575 30.718l14.142-14.142 0.707 0.707-14.142 14.142-0.707-0.707zm0.425-20.718h5v1h-5v-1zm-6.5 11h11.5v1h-11.5v-1z"/>
+ <path d="m11 17v5h-1v-5h1zm11-6v11h-1v-11h1z"/>
 </svg>
