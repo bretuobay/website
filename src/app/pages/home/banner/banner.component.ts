@@ -12,14 +12,14 @@ export class BannerComponent implements OnInit, AfterViewInit {
       name: 'Groove Packer | case study',
       heading: 'The best warehouse management system',
       img: '/assets/case-study/groovepacker/scan-pack.png',
-      color: {bg: 'rgba(245, 60, 31, 0.7)', text: '#AA2525'},
+      color: {bg: 'linear-gradient(to bottom right, #ffc09b, #ed3722)', text: '#AA2525'},
       link: '/work/groovepacker'
     },
     {
       name: 'My Veeta | case study',
       heading: `Find your dream Job`,
       img: '/assets/case-study/my-veeta/landing.png',
-      color: {bg: 'rgba(140, 255, 249, 0.7)', text: '#167884'},
+      color: {bg: 'linear-gradient(to right bottom, rgb(171, 243, 240), rgb(4, 113, 113))', text: '#167884'},
       link: '/work/my-veeta'
     }
   ];
