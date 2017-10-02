@@ -1,18 +1,15 @@
 .jumbotron {
   &.main {
     margin-bottom: -1rem;
-    background-image: url("/assets/blog/header.png");
-    background-blend-mode: luminosity;
-    background-color: rgb(207, 226, 230);
+    background-image: url("/assets/blog/header.svg");
+    background-color: white;
     padding-bottom: 2rem;
     padding-top: 8rem;
-    background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     height: 20rem;
     .header {
       font-size: 4rem;
-      color: #333;
+      color: #444;
       font-weight: bold;
       text-align: center;
     }
