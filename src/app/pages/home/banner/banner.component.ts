@@ -11,14 +11,14 @@ export class BannerComponent implements OnInit, AfterViewInit {
     {
       name: 'Groove Packer | case study',
       heading: 'The best warehouse management system',
-      img: 'http://res.cloudinary.com/mally-in/image/upload/c_scale,w_520/v1506914160/scan-pack_wzay4f.png',
+      img: 'https://res.cloudinary.com/mally-in/image/upload/c_scale,w_520/v1506914160/scan-pack_wzay4f.png',
       color: {bg: 'linear-gradient(to bottom right, #ffc09b, #ed3722)', text: '#AA2525'},
       link: '/work/groovepacker'
     },
     {
       name: 'My Veeta | case study',
       heading: `Find your dream Job`,
-      img: 'http://res.cloudinary.com/mally-in/image/upload/c_scale,w_520/v1506914166/landing_hvywzy.jpg',
+      img: 'https://res.cloudinary.com/mally-in/image/upload/c_scale,w_520/v1506914166/landing_hvywzy.jpg',
       color: {bg: 'linear-gradient(to right bottom, rgb(171, 243, 240), rgb(4, 113, 113))', text: '#167884'},
       link: '/work/my-veeta'
     }
