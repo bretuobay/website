@@ -10,8 +10,13 @@
     .header {
       font-size: 4rem;
       color: #444;
+      font-family: cursive;
       font-weight: bold;
       text-align: center;
+      margin-top: -1rem;
+      @media (max-width: 552px) {
+        font-size: 3rem;
+      }
     }
     canvas {
       position: absolute;
