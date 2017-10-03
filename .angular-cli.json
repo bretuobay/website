@@ -24,9 +24,7 @@
       "styles": [
         "styles.scss"
       ],
-      "scripts": [
-        "../node_modules/web-animations-js/web-animations.min.js"
-      ],
+      "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

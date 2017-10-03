@@ -32,7 +32,6 @@
     "ngx-bootstrap": "^1.9.1",
     "nodemailer": "^4.1.1",
     "rxjs": "^5.1.0",
-    "web-animations-js": "^2.3.1",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
