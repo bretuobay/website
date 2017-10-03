@@ -38,6 +38,6 @@ export class BannerComponent implements OnInit, AfterViewInit {
     const jumbotron = this.elementRef.nativeElement.querySelector('.jumbotron');
     canvas.width = jumbotron.offsetWidth;
     canvas.height = jumbotron.offsetHeight;
-    this.canvasAnimate.addCircleAnimation(context, innerWidth / 10);
+    this.canvasAnimate.addCircleAnimation(context, 100);
   }
 }
