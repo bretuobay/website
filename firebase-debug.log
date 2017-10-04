@@ -1,0 +1,137 @@
+[debug] [2017-10-04T16:31:57.488Z] ----------------------------------------------------------------------
+[debug] [2017-10-04T16:31:57.492Z] Command:       /Users/rawat/.nvm/versions/node/v6.11.0/bin/node /Users/rawat/.nvm/versions/node/v6.11.0/bin/firebase deploy
+[debug] [2017-10-04T16:31:57.493Z] CLI Version:   3.12.0
+[debug] [2017-10-04T16:31:57.493Z] Platform:      darwin
+[debug] [2017-10-04T16:31:57.493Z] Node Version:  v6.11.0
+[debug] [2017-10-04T16:31:57.495Z] Time:          Wed Oct 04 2017 22:01:57 GMT+0530 (IST)
+[debug] [2017-10-04T16:31:57.495Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-04T16:31:57.535Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-04T16:31:57.536Z] > authorizing via signed-in user
+[debug] [2017-10-04T16:31:57.540Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/aviabird-5ea5f  
+ Wed Oct 04 2017 22:01:57 GMT+0530 (IST)
+[debug] [2017-10-04T16:31:59.240Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-04T16:31:59.243Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/aviabird-5ea5f/tokens  
+ Wed Oct 04 2017 22:01:59 GMT+0530 (IST)
+[debug] [2017-10-04T16:32:01.779Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'aviabird-5ea5f'...
+[info] 
+[info] i  deploying database, functions, hosting
+[info] ✔  database: rules ready to deploy.
+[debug] [2017-10-04T16:32:05.785Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "dependencies": {
+    "firebase-admin": "~4.2.1",
+    "firebase-functions": "^0.5.7",
+    "nodemailer": "^4.1.1"
+  },
+  "private": true,
+  "devDependencies": {}
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[info] i  runtimeconfig: ensuring necessary APIs are enabled...
+[debug] [2017-10-04T16:32:05.790Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/aviabird-5ea5f?view=CONSUMER_VIEW  
+ Wed Oct 04 2017 22:02:05 GMT+0530 (IST)
+[debug] [2017-10-04T16:32:05.792Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/aviabird-5ea5f?view=CONSUMER_VIEW  
+ Wed Oct 04 2017 22:02:05 GMT+0530 (IST)
+[debug] [2017-10-04T16:32:07.619Z] <<< HTTP RESPONSE 200
+[info] ✔  runtimeconfig: all necessary APIs are enabled
+[debug] [2017-10-04T16:32:07.682Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2017-10-04T16:32:07.685Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/aviabird-5ea5f  
+ Wed Oct 04 2017 22:02:07 GMT+0530 (IST)
+[debug] [2017-10-04T16:32:07.686Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/aviabird-5ea5f/apiKeys  
+ Wed Oct 04 2017 22:02:07 GMT+0530 (IST)
+[debug] [2017-10-04T16:32:09.770Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-04T16:32:09.775Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2017-10-04T16:32:16.977Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/aviabird-5ea5f/configs  
+ Wed Oct 04 2017 22:02:16 GMT+0530 (IST)
+[debug] [2017-10-04T16:32:17.749Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-04T16:32:17.751Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/aviabird-5ea5f/configs/gmail/variables  
+ Wed Oct 04 2017 22:02:17 GMT+0530 (IST)
+[debug] [2017-10-04T16:32:18.365Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-04T16:32:18.367Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/aviabird-5ea5f/configs/gmail/variables/email  
+ Wed Oct 04 2017 22:02:18 GMT+0530 (IST)
+[debug] [2017-10-04T16:32:18.371Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/aviabird-5ea5f/configs/gmail/variables/password  
+ Wed Oct 04 2017 22:02:18 GMT+0530 (IST)
+[debug] [2017-10-04T16:32:18.983Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-04T16:32:18.986Z] <<< HTTP RESPONSE 200
+[info] i  functions: packaged functions (1.52 KB) for uploading
+[debug] [2017-10-04T16:32:22.323Z] >>> HTTP REQUEST GET https://www.googleapis.com/storage/v1/b/staging.aviabird-5ea5f.appspot.com  
+ Wed Oct 04 2017 22:02:22 GMT+0530 (IST)
+[debug] [2017-10-04T16:32:22.972Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-04T16:32:22.974Z] >>> HTTP REQUEST POST https://www.googleapis.com/upload/storage/v1/b/staging.aviabird-5ea5f.appspot.com/o?uploadType=media&name=firebase-functions-source ReadStream {
+  _readableState: 
+   ReadableState {
+     objectMode: false,
+     highWaterMark: 65536,
+     buffer: BufferList { head: [Object], tail: [Object], length: 1 },
+     length: 1561,
+     pipes: null,
+     pipesCount: 0,
+     flowing: null,
+     ended: true,
+     endEmitted: false,
+     reading: false,
+     sync: false,
+     needReadable: false,
+     emittedReadable: true,
+     readableListening: false,
+     resumeScheduled: false,
+     defaultEncoding: 'utf8',
+     ranOut: false,
+     awaitDrain: 0,
+     readingMore: false,
+     decoder: null,
+     encoding: null },
+  readable: true,
+  domain: null,
+  _events: { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path: '/var/folders/5b/mh31y3t56h5c6bpk37t1x3w80000gn/T/firebase-functions-96896PRTy4TxDcD1A.zip',
+  fd: 19,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: undefined,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 1561 } 
+ Wed Oct 04 2017 22:02:22 GMT+0530 (IST)
+[debug] [2017-10-04T16:32:23.816Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: functions folder uploaded successfully
+[info] i  hosting: preparing dist directory for upload...
+[debug] [2017-10-04T16:32:24.353Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/aviabird-5ea5f/uploads/-KvcDir1NXchRmAPVuFw?fileCount=46&message=  
+ Wed Oct 04 2017 22:02:24 GMT+0530 (IST)
+[debug] [2017-10-04T16:32:35.734Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-04T16:32:35.735Z] [hosting] .tgz uploaded successfully, waiting for extraction
+[info] ✔  hosting: 46 files uploaded successfully
+[info] i  starting release process (may take several minutes)...
+[debug] [2017-10-04T16:32:36.835Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1beta2/projects/aviabird-5ea5f/locations/us-central1/functions  
+ Wed Oct 04 2017 22:02:36 GMT+0530 (IST)
+[debug] [2017-10-04T16:32:38.949Z] <<< HTTP RESPONSE 200
+[info] i  functions: updating function addMessage...
+[debug] [2017-10-04T16:32:38.956Z] Trigger is: 
+[info] i  functions: updating function sendContactMessage...
+[debug] [2017-10-04T16:32:38.958Z] Trigger is: 
+[debug] [2017-10-04T16:32:38.960Z] >>> HTTP REQUEST PUT https://cloudfunctions.googleapis.com/v1beta2/projects/aviabird-5ea5f/locations/us-central1/functions/addMessage { sourceArchiveUrl: 'gs://staging.aviabird-5ea5f.appspot.com/firebase-functions-source',
+  name: 'projects/aviabird-5ea5f/locations/us-central1/functions/addMessage',
+  entryPoint: 'addMessage',
+  timeout: '60s',
+  availableMemoryMb: 256,
+  httpsTrigger: {} } 
+ Wed Oct 04 2017 22:02:38 GMT+0530 (IST)
+[debug] [2017-10-04T16:32:38.963Z] >>> HTTP REQUEST PUT https://cloudfunctions.googleapis.com/v1beta2/projects/aviabird-5ea5f/locations/us-central1/functions/sendContactMessage { sourceArchiveUrl: 'gs://staging.aviabird-5ea5f.appspot.com/firebase-functions-source',
+  name: 'projects/aviabird-5ea5f/locations/us-central1/functions/sendContactMessage',
+  entryPoint: 'sendContactMessage',
+  timeout: '60s',
+  availableMemoryMb: 256,
+  eventTrigger: 
+   { resource: 'projects/_/instances/aviabird-5ea5f/refs/messages/{pushKey}',
+     eventType: 'providers/google.firebase.database/eventTypes/ref.write' } } 
+ Wed Oct 04 2017 22:02:38 GMT+0530 (IST)
+[debug] [2017-10-04T16:32:40.793Z] <<< HTTP RESPONSE 200
