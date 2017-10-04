@@ -6,7 +6,7 @@
     margin-bottom: 1rem;
   }
   .work-image {
-    padding: 2rem 3rem;
+    padding: 1rem 2rem;
     border: 1px solid transparent;
     transition: all 0.3s;
     @media (max-width: 756px) {
@@ -27,7 +27,7 @@
     margin-bottom: 1rem;
     font-size: 3rem;
     font-weight: 700;
-    @media (max-width: 756px) {
+    @media (max-width: 767px) {
       margin-top: 0;
       font-size: 2rem;
     }

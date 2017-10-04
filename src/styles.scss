@@ -12,3 +12,9 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none;
+  }
+}

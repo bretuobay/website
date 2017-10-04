@@ -6,6 +6,12 @@
     margin-top: 2rem;
   }
 
+  @media (max-width: 991px) {
+    .col {
+      text-align: center;
+    }
+  }
+
   .list-group {
     padding-bottom: 1rem;
     .list-group-item {
