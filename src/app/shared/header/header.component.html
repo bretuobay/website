@@ -8,7 +8,7 @@
         </a>
         <div class="btn-group ml-auto"
           (onShown)="onDropDownShown()"
-          (onHide)="onDropDownHide()"
+          (onHidden)="onDropDownHide()"
           placement="left"
           dropdown
         >
@@ -23,7 +23,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active" *ngFor="let nav of navItems">
+            <li class="nav-item" *ngFor="let nav of navItems">
               <a class="nav-link" [routerLink]='nav.url'>{{nav.name}}</a>
             </li>
           </ul>

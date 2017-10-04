@@ -13,4 +13,4 @@ const routes: Route[] = [
 ];
 
 export const routing: ModuleWithProviders =
-RouterModule.forRoot(routes, {preloadingStrategy: PreloadAllModules});
+RouterModule.forRoot(routes);
