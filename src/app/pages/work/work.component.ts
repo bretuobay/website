@@ -10,6 +10,7 @@ import { CASE_STUDY_DATA } from 'app/shared/data/case-study';
 export class WorkComponent implements OnInit {
   client_data = CLIENT_DATA;
   case_study = CASE_STUDY_DATA;
+  window = window;
 
   constructor() { }
 

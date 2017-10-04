@@ -56,12 +56,6 @@
       box-shadow: 0 0 10px -2px #aaa;
     }
 
-    @media (max-width: 752px) {
-      .hide-mobile {
-        display: none;
-      }
-    }
-
     @media (max-width: 552px) {
       img.article-img {
         margin: 0 -1rem;
