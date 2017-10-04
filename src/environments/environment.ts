@@ -13,6 +13,7 @@ export const environment = {
     databaseURL: ENV.DATABASE_URL,
     storageBucket: ENV.STORAGE_BUCKET,
     projectId: ENV.PROJECT_ID,
-    messagingSenderId: ENV.MESSAGING_SENDERID,
-  }
+    messagingSenderId: ENV.MESSAGING_SENDERID
+  },
+  cloudinary_api: ENV.CLOUDINARY_URL
 };

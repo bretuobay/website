@@ -3,13 +3,15 @@
    /deep/ .read-more {
      color: black;
    }
-   .work-image:hover {
-     border: 1px solid #666;
-     box-shadow: 0 0 15px #888;
-   }
    .work-image {
      height: 400px;
      padding: 50px;
+     border: 1px solid transparent;
+     transition: all 0.3s;
+     &:hover {
+      border: 1px solid #666;
+      box-shadow: 0 0 15px #888;
+    }
    }
    .center-image {
      height: 100%;

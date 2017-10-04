@@ -9,5 +9,6 @@ export const environment = {
     storageBucket: ENV.STORAGE_BUCKET,
     projectId: ENV.PROJECT_ID,
     messagingSenderId: ENV.MESSAGING_SENDERID,
-  }
+  },
+  cloudinary_api: ENV.CLOUDINARY_URL
 };

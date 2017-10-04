@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { DataService, serviceNames } from 'app/shared/services/data.service';
+import { DataService } from 'app/shared/services/data.service';
 
 @Component({
   selector: 'aw-service-details',

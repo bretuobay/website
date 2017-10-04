@@ -1,5 +1,7 @@
+import { DataService } from './../../../shared/services/data.service';
 import { CanvasAnimateService } from './../../../shared/services/canvas-animate.service';
 import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
+import CCaseStudy from 'app/shared/services/models/c-case-study';
 
 @Component({
   selector: 'aw-banner',
@@ -7,29 +9,16 @@ import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
   styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent implements OnInit, AfterViewInit {
-  caseStudy = [
-    {
-      name: 'Groove Packer | case study',
-      heading: 'The best warehouse management system',
-      img: 'https://res.cloudinary.com/mally-in/image/upload/c_scale,w_520/v1506914160/scan-pack_wzay4f.png',
-      color: {bg: 'linear-gradient(to bottom right, #ffc09b, #ed3722)', text: '#AA2525'},
-      link: '/work/groovepacker'
-    },
-    {
-      name: 'My Veeta | case study',
-      heading: `Find your dream Job`,
-      img: 'https://res.cloudinary.com/mally-in/image/upload/c_scale,w_520/v1506914166/landing_hvywzy.jpg',
-      color: {bg: 'linear-gradient(to right bottom, rgb(171, 243, 240), rgb(4, 113, 113))', text: '#167884'},
-      link: '/work/my-veeta'
-    }
-  ];
+  caseStudy: Array<CCaseStudy>;
 
   constructor(
     private elementRef: ElementRef,
-    private canvasAnimate: CanvasAnimateService
+    private canvasAnimate: CanvasAnimateService,
+    private data: DataService
   ) { }
 
   ngOnInit() {
+    this.caseStudy = this.data.caseStudy;
   }
 
   ngAfterViewInit() {
