@@ -6,7 +6,7 @@ export const CLIENT_DATA = [
             years. To date, the most common way to send a CV is a PDF
             file. This is suboptimal - for both job applicants and
             employers.`,
-    img: 'http://res.cloudinary.com/aviabird/image/upload/w_150/v1507121544/aviabird/my-veeta.png'
+    img: 'https://res.cloudinary.com/aviabird/image/upload/w_150/v1507121544/aviabird/my-veeta.png'
   },
   {
     name: 'Groovepacker',
@@ -17,7 +17,7 @@ export const CLIENT_DATA = [
     a constant issue. We needed to be able handle training new hires for
     our warehouse system remotely and we needed a cloud based solution
     that would allow monitoring and order editing from any location. `,
-    img: 'http://res.cloudinary.com/aviabird/image/upload/w_150/v1507121545/aviabird/groovepacker.png'
+    img: 'https://res.cloudinary.com/aviabird/image/upload/w_150/v1507121545/aviabird/groovepacker.png'
   },
   {
     name: 'Max My Wealth',
@@ -32,6 +32,6 @@ export const CLIENT_DATA = [
           edge financial research and best practices. We have further
           automated these processes to make them accessible to all at really
           low incremental cost.`,
-    img: 'http://res.cloudinary.com/aviabird/image/upload/w_150/v1507121544/aviabird/maxmywealth.png'
+    img: 'https://res.cloudinary.com/aviabird/image/upload/w_150/v1507121544/aviabird/maxmywealth.png'
   },
 ];

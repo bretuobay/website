@@ -9,7 +9,7 @@ export const CASE_STUDY_DATA = [
   {
     name: 'My Veeta',
     heading: `Find your dream Job`,
-    img: 'http://res.cloudinary.com/aviabird/image/upload/c_scale,w_520/v1507128804/my-veeta-landing.png',
+    img: 'https://res.cloudinary.com/aviabird/image/upload/c_scale,w_520/v1507128804/my-veeta-landing.png',
     color: {bg: 'linear-gradient(to right bottom, rgb(171, 243, 240), rgb(4, 113, 113))', text: '#167884'},
     link: '/work/my-veeta'
   }
