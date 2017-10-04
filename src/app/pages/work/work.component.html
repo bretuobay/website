@@ -1,32 +1,22 @@
 <div class="jumbotron">
   <div class="container">
-    <div class="row">
-      <div class="col">
-        <h2 class="work-title">Groove packer</h2>
-        <p class="work-body">The best warehouse management system</p>
-        <aw-read-more-link></aw-read-more-link>
+    <div class="row mt-5" *ngFor="let case of case_study; let i = index">
+      <div class="col-12 col-md-4 col-lg-5" *ngIf="(i % 2) == 0">
+        <h1 class="work-title">{{case.name}}</h1>
+        <p class="work-body">{{case.heading}}</p>
+        <aw-read-more-link [isExternalLink]="false" route="{{case.link}}"></aw-read-more-link>
       </div>
-      <div class="col-12 col-md-6 col-lg-7">
-        <div class="work-image orange-card">
-          <div class="center-image groove-img"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="jumbotron">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-6 col-lg-7">
-        <div class="work-image blue-card">
-          <div class="center-image myveeta-img"></div>
+      <div class="col-12 col-md-8 col-lg-7 mt-5">
+        <div class="work-image" [ngStyle]="{'background': case.color.bg}">
+          <img [src]="case.img" alt="case.name">
         </div>
       </div>
-      <div class="col">
-        <h2 class="work-title">My Veeta</h2>
-        <p class="work-body">Find your dream job</p>
-        <aw-read-more-link></aw-read-more-link>
+
+      <div class="col-12 col-md-4 col-lg-5" *ngIf="(i % 2) != 0">
+        <h1 class="work-title">{{case.name}}</h1>
+        <p class="work-body">{{case.heading}}</p>
+        <aw-read-more-link [isExternalLink]="false" route="{{case.link}}"></aw-read-more-link>
       </div>
     </div>
   </div>
@@ -35,20 +25,11 @@
 <div class="jumbotron worksection">
   <div class="container">
     <h2 class="headline">Who we have'd worked with</h2>
-    <ul>
-      <li class="grid-item">
-        <img src="../../../assets/clients/logo/my-veeta.png" alt="">
-        <p class="client_desc">Communication between job applicants and employers during the application process has hardly changed in the last 15 years. To date, the most common way to send a CV is a PDF file. This is suboptimal - for both job applicants and employers.</p>
-      </li>
-      <li class="grid-item">
-        <img src="../../../assets/clients/logo/maxmywealth.png" alt="">
-        <p class="client_desc">Global investment professionals and academics with significant investing and research experience have set up Heathwalk Advisors. We are creating an intelligent layer that enables people to make smart savings and investing decisions, automatically. It is our deepest desire to create one of the most sophisticated and transparent savings and investment platforms - accessible to all. We have distilled all our experience in investing and asset management to make sure you have access to the latest cutting edge financial research and best practices. We have further automated these processes to make them accessible to all at really low incremental cost.</p>
-      </li>
-      <li class="grid-item">
-        <img src="../../../assets/clients/logo/groovepacker.png" alt="">
-        <p class="client_desc">The best warehouse management system.GroovePacker was created out of necessity after we moved our fulfillment to a training center. We had regular turn over, complicated kitting and a large number of similar SKUs in our inventory. As a result our shipping accuracy was a constant issue. We needed to be able handle training new hires for our warehouse system remotely and we needed a cloud based solution that would allow monitoring and order editing from any location. </p>
-      </li>
-      
-    </ul>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 client_info" *ngFor="let client of client_data">
+        <img [src]="client.img" alt="client.name">
+        <p>{{client.desc}}</p>
+      </div>
+    </div>
   </div>
 </div>
