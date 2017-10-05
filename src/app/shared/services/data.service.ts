@@ -1,6 +1,6 @@
 import { SERVICE_DATA } from './../data/services';
 import { CASE_STUDY_DATA } from './../data/case-study';
-import { Http } from '@angular/http';
+import { Http, Headers } from '@angular/http';
 import { Injectable } from '@angular/core';
 
 export interface Feed {
@@ -17,9 +17,13 @@ export class DataService {
   constructor(private http: Http) { }
 
   medium_feeds() {
-    return this.http.get(
-      'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/aviabird'
-    ).map(res => res.json().items as Array<Feed>);
+    const url = 'https://api.rss2json.com/v1/api.json?';
+
+    return this.http
+      .get(`${url}rss_url=https://medium.com/feed/aviabird`)
+      .map(res => res.json().items as Array<Feed>)
+      .publishReplay(1, 60 * 60 * 24)
+      .refCount();
   }
 
   get services() {
