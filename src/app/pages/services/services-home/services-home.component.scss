@@ -26,7 +26,7 @@
     transition: all 500ms;
     cursor: pointer;
     &:hover {
-      .visit-link-arrow {
+      .icon-right-open:before {
         transform: translateX(0%);
         opacity: 1;
       }
@@ -44,7 +44,7 @@
       height: 3rem;
       margin: 1rem 1rem 1rem 0;
     }
-    .visit-link-arrow {
+    .icon-right-open:before {
       right: 1%;
       transform: translateX(-200%);
       opacity: 0;
@@ -52,7 +52,7 @@
       position: absolute;
       top: 34%;
       font-size: 2.3rem;
-      color: black;
+      color: #444;
     }
   }
 }

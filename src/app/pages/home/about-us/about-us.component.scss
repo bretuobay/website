@@ -1,5 +1,6 @@
 .jumbotron {
   background: white;
+  min-height: 31rem;
   // .about-us-text {}
   @media (max-width: 576px) {
     padding-bottom: 3rem;
@@ -14,8 +15,8 @@
       .read-more-wrapper {
         cursor: pointer;
         /deep/ .read-more {
-          .visit-link-arrow {
-            transform: translateX(150%) scale(1.2);
+          .icon-right-open:before {
+            transform: translateX(120%) scale(1.2);
           }
         }
       }

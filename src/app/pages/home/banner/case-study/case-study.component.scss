@@ -15,8 +15,8 @@
     box-shadow: 0 0 15px #888;
     aw-read-more-link {
       /deep/ .read-more {
-        .visit-link-arrow {
-          transform: translateX(150%) scale(1.2);
+        .icon-right-open:before {
+          transform: translateX(120%) scale(1.2);
         }
       }
     }

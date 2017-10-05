@@ -8,8 +8,7 @@
     background-position: 0, 100%;
     background-color: #ff596e;
     height: 320px;
-    padding-top: 40px;
-    padding-left: 10px;
+    padding: 2rem 0.5rem;
     box-shadow: 0 0 10px #aaa;
     border: 1px solid transparent;
     transition: all 300ms;
@@ -19,8 +18,8 @@
       box-shadow: 0 0 15px #888;
       aw-read-more-link {
         /deep/ .read-more {
-          .visit-link-arrow {
-            transform: translateX(150%) scale(1.2);
+          .icon-right-open:before {
+            transform: translateX(120%) scale(1.2);
           }
         }
       }
@@ -54,7 +53,7 @@
       /deep/ .read-more {
         color: black;
         position: absolute;
-        bottom: 1rem;
+        bottom: 2rem;
       }
     }
   }
