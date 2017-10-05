@@ -29,16 +29,14 @@
             <div class="col-12 col-lg-5 col-md-6">
               <img src="https://res.cloudinary.com/aviabird/image/upload/v1507121553/aviabird/large-{{selectedService.icon}}.svg" alt="{{selectedService.name}}">
             </div>
-            <div class="col-12 col-md-6 col-lg-7">
+            <div class="col-12 col-md-6 col-lg-7 service-summary" routerLink="{{selectedService.link}}">
               <i class="selected-service-text">
                 {{selectedService.summary}}
               </i>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-5 col-md-6"></div>
-            <div class="col-md-6 col-lg-7 align-self-end">
-              <aw-read-more-link [isExternalLink]="false" route="{{selectedService.link}}"></aw-read-more-link>
+              <br><br>
+              <div class="read-more-wrapper">
+                <aw-read-more-link [isExternalLink]="false" route="{{selectedService.link}}"></aw-read-more-link>
+              </div>
             </div>
           </div>
         </div>

@@ -7,6 +7,20 @@
   /deep/ .read-more {
     color: black;
   }
+  .service-summary {
+    &:hover {
+      cursor: pointer;
+      outline: none;
+      .read-more-wrapper {
+        cursor: pointer;
+        /deep/ .read-more {
+          .visit-link-arrow {
+            transform: translateX(150%) scale(1.2);
+          }
+        }
+      }
+    }
+  }
   .nav {
     @media (max-width: 576px) {
       box-shadow: 0 0 5px #aaa;

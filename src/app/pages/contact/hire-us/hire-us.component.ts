@@ -1,16 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding, ChangeDetectionStrategy } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Router } from '@angular/router';
+import { fadeInAnimation } from 'app/shared/animations';
 
 @Component({
   selector: 'aw-hire-us',
   templateUrl: './hire-us.component.html',
+  animations: [fadeInAnimation],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./hire-us.component.scss']
 })
 export class HireUsComponent implements OnInit {
   form: FormGroup;
   showAlert = false;
+  @HostBinding('@fadeInAnimation')
+  public animatePage = true;
 
   constructor(
     private fb: FormBuilder,

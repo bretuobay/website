@@ -13,6 +13,7 @@
     box-shadow: 0 0 10px #aaa;
     border: 1px solid transparent;
     transition: all 300ms;
+    cursor: pointer;
     &:hover {
       border: 1px solid #666;
       box-shadow: 0 0 15px #888;

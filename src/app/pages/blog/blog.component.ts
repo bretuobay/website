@@ -1,14 +1,19 @@
 import { DataService, Feed } from './../../shared/services/data.service';
 import { Observable } from 'rxjs/Observable';
-import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef, HostBinding, ChangeDetectionStrategy } from '@angular/core';
 import { CanvasAnimateService } from 'app/shared/services/canvas-animate.service';
+import { fadeInAnimation } from 'app/shared/animations';
 
 @Component({
   selector: 'aw-blog',
   templateUrl: './blog.component.html',
+  animations: [fadeInAnimation],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent implements OnInit, AfterViewInit {
+  @HostBinding('@fadeInAnimation')
+  public animatePage = true;
 
   rssFeeds$: Observable<Array<Feed>>;
 

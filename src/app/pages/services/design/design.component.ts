@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { DataService } from 'app/shared/services/data.service';
 import { serviceNames } from 'app/shared/data/services';
 
 @Component({
   selector: 'aw-design',
   templateUrl: './design.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./design.component.scss']
 })
 export class DesignComponent implements OnInit {
@@ -12,7 +13,6 @@ export class DesignComponent implements OnInit {
   constructor(private data: DataService) { }
 
   ngOnInit() {
-    window.scrollTo(0, 0);
   }
 
   get service() {
