@@ -21,9 +21,7 @@ export class DataService {
 
     return this.http
       .get(`${url}rss_url=https://medium.com/feed/aviabird`)
-      .map(res => res.json().items as Array<Feed>)
-      .publishReplay(1, 60 * 60 * 24)
-      .refCount();
+      .map(res => res.json().items as Array<Feed>);
   }
 
   get services() {
