@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'aw-header',
   templateUrl: './header.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
@@ -28,6 +29,10 @@ export class HeaderComponent implements OnInit {
       {url: '/blog', name: 'BLOG'},
       {url: '/contact/hire-us', name: 'CONTACT US'},
     ];
+  }
+
+  trackByFn(index, item) {
+    return index; // or item.id
   }
 
 }

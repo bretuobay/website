@@ -10,7 +10,7 @@
           <div class="col-12 col-sm-3 col-md-3 col-lg-3">
             <ul class="list-group">
               <strong>Services</strong>
-              <li class="list-group-item" *ngFor="let service of services">
+              <li class="list-group-item" *ngFor="let service of services; trackBy: trackByFn">
                 <a [routerLink]="service.link">{{service.name}}</a>
               </li>
             </ul>
@@ -18,7 +18,7 @@
           <div class="col-12 col-sm-3 col-md-3 col-lg-3">
             <ul class="list-group">
               <strong>Capabilities</strong>
-              <li class="list-group-item" *ngFor="let capability of capabilities">
+              <li class="list-group-item" *ngFor="let capability of capabilities; trackBy: trackByFn">
                 <a [routerLink]="capability.link">{{capability.name}}</a>
               </li>
             </ul>
@@ -26,7 +26,7 @@
           <div class="col-12 col-sm-3 col-md-3 col-lg-3">
             <ul class="list-group">
               <strong>Company</strong>
-              <li class="list-group-item" *ngFor="let comp of company">
+              <li class="list-group-item" *ngFor="let comp of company; trackBy: trackByFn">
                 <a [routerLink]="comp.link">{{comp.name}}</a>
               </li>
             </ul>
@@ -34,7 +34,7 @@
           <div class="col-12 col-sm-3 col-md-3 col-lg-3">
             <ul class="list-group">
               <strong>Connect</strong>
-              <li class="list-group-item" *ngFor="let connect of connects">
+              <li class="list-group-item" *ngFor="let connect of connects; trackBy: trackByFn">
                 <a href="{{connect.link}}">{{connect.name}}</a>
               </li>
             </ul>
