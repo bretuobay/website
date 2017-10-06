@@ -17,11 +17,15 @@ export class DataService {
   constructor(private http: Http) { }
 
   medium_feeds() {
-    const url = 'https://api.rss2json.com/v1/api.json?';
+    const url = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/aviabird';
+    const headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    headers.append('cache-control', 'max-age=86400');
 
     return this.http
-      .get(`${url}rss_url=https://medium.com/feed/aviabird`)
-      .map(res => res.json().items as Array<Feed>);
+      .get(url, { headers })
+      .map(res => res.json().items as Array<Feed>)
+      .publishReplay(1).refCount();
   }
 
   get services() {
