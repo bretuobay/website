@@ -1,8 +1,9 @@
+import { HomeComponent } from './pages/home/home.component';
 import { RouterModule, Route, PreloadAllModules } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 
 const routes: Route[] = [
-  { loadChildren: './pages/home/home.module#HomeModule', path: '' },
+  { path: '', component: HomeComponent },
   { loadChildren: './pages/services/services.module#ServicesModule', path: 'services' },
   { loadChildren: './pages/work/work.module#WorkModule', path: 'work' },
   { loadChildren: './pages/why-aviabird/why-aviabird.module#WhyAviabirdModule', path: 'why-aviabird' },
