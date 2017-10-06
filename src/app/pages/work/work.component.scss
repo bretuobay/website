@@ -68,9 +68,17 @@
   padding-top: 5rem;
   .client_info {
     margin: 1rem 0;
-    img {
+    .client-logo {
       margin-bottom: 1rem;
-      margin-left: 1rem;
+      margin-left: -2rem;
+      &.aviabird-groovepacker {
+        width: 410px;
+        transform: translateX(-14%) scale(0.5);
+        margin-bottom: 0rem;
+      }
+      &.aviabird-maxmywealth {
+        margin-bottom: 0rem;
+      }
     }
     p {
       text-align: justify;

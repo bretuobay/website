@@ -5,9 +5,9 @@
       <h6 class="d-flex justify-content-center">WHO WE'VE WORKED WITH</h6>
       <i class="border-after"></i>
     </div>
-    <ul class="nav nav-pills row justify-content-center nav-fill client-list">
+    <ul class="nav nav-pills row justify-content-center client-list">
       <li class="nav-item client-list-item" *ngFor="let client of clientList">
-        <img [src]="client.img" [alt]="client.name">
+        <i class="d-inline-block client-logo aviabird-{{client.logo}}"></i>
       </li>
     </ul>
   </div>
