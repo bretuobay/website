@@ -42,7 +42,7 @@
   }
 
   .case-img {
-    height: 300px;
+    height: inherit;
     position: relative;
     top: 2rem;
     @media (max-width: 576px) {
