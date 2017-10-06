@@ -39,7 +39,7 @@
         <ul class="list-group blog-list">
           <li class="list-group-item" *ngFor="let latest of rssFeeds">
             <h2 class="header">
-              <a [href]="latest.link">{{latest.title}}</a>
+              <a rel=noreferrer [href]="latest.link" target="_blank">{{latest.title}}</a>
             </h2>
             <p class="desc" [innerHtml]="parseHeading(latest.description)"></p>
             <p class="detail">
