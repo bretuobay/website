@@ -1,7 +1,8 @@
+import { Http } from '@angular/http';
 import { Component, OnInit, HostBinding, ChangeDetectionStrategy } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { AngularFireDatabase } from 'angularfire2/database';
 import { Router } from '@angular/router';
+import { environment } from 'environments/environment';
 import { fadeInAnimation } from 'app/shared/animations';
 
 @Component({
@@ -19,8 +20,8 @@ export class HireUsComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    private database: AngularFireDatabase,
-    private router: Router
+    private router: Router,
+    private http: Http
   ) {
     this.createForm();
   }
@@ -64,9 +65,21 @@ export class HireUsComponent implements OnInit {
       name, email, company, phone, how, budget, message, date, html
     };
 
-    this.database.list('/messages').push(formRequest);
+    const subs = this.http.post(
+      `${this.firebaseURL}/messages.json`,
+      formRequest
+    ).subscribe(
+      _ => _,
+      e => console.error(e),
+      () => subs.unsubscribe()
+    );
+
     this.form.reset();
     this.router.navigate(['/contact/hire-us/thank-you']);
+  }
+
+  get firebaseURL() {
+    return `https://${environment.firebase.projectId}.firebaseio.com`;
   }
 
 }

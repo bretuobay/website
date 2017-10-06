@@ -37,8 +37,10 @@ exports.sendContactMessage = functions.database.ref('/messages/{pushKey}').onWri
   const val = snapshot.val();
   
   const mailOptions = {
+    from: val.name,
     to: 'hello@aviabird.com',
-    subject: `Alert! New Message from Aviabird.com  ${val.name}`,
+    replyTo: val.email,
+    subject: `Client Alert! New Message from Aviabird.com`,
     html: val.html
   };
   return mailTransport.sendMail(mailOptions).then(() => {

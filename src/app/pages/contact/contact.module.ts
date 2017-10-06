@@ -5,6 +5,7 @@ import { HireUsComponent } from './hire-us/hire-us.component';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ThankYouComponent } from './thank-you/thank-you.component';
+import { environment } from 'environments/environment';
 
 const routing: ModuleWithProviders = RouterModule.forChild([
   {path: '', redirectTo: 'hire-us'},

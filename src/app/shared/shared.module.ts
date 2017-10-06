@@ -9,18 +9,13 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { LetsBuildBtnComponent } from './lets-build-btn/lets-build-btn.component';
 import { ReadMoreLinkComponent } from './read-more-link/read-more-link.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { environment } from 'environments/environment';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
     BsDropdownModule.forRoot(),
-    ReactiveFormsModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    ReactiveFormsModule
   ],
   declarations: [
     LetsBuildBtnComponent,
