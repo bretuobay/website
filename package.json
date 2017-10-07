@@ -7,6 +7,7 @@
     "start": "ng serve --host 0.0.0.0 --port 4200",
     "build": "ng build",
     "test": "ng test",
+    "bundle-report": "webpack-bundle-analyzer dist/stats.json",
     "build:prod": "ng build --target production --aot --build-optimizer --extract-css --output-hashing all",
     "test:prod": "cd dist && python -m SimpleHTTPServer 8800",
     "lint": "ng lint",
@@ -48,7 +49,8 @@
     "protractor": "~5.1.0",
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
-    "typescript": "~2.2.0"
+    "typescript": "~2.2.0",
+    "webpack-bundle-analyzer": "^2.9.0"
   },
   "description": "Aviabird Website",
   "main": "index.js",
