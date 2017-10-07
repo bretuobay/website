@@ -7,7 +7,7 @@
         <aw-read-more-link [isExternalLink]="false" route="{{caseStudy.link}}"></aw-read-more-link>
       </div>
       <div class="col-12 col-md-7 col-lg-7">
-        <img class="case-img" [src]="caseStudy.img" alt="caseStudy.name">
+        <img class="case-img" [src]="caseStudy.img | cdn | resize:'w_520'" alt="caseStudy.name">
       </div>
     </div>
   </div>

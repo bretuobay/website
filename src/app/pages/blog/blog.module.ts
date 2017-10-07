@@ -1,3 +1,4 @@
+import { SharedModule } from 'app/shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -10,6 +11,7 @@ const routing: ModuleWithProviders = RouterModule.forChild([
 @NgModule({
   imports: [
     CommonModule,
+    SharedModule,
     routing
   ],
   declarations: [BlogComponent]

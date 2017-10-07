@@ -1,3 +1,5 @@
+import { CDNPipe } from './pipes/cdn.pipe';
+import { ResizePipe } from './pipes/resize.pipe';
 import { CanvasAnimateService } from './services/canvas-animate.service';
 import { DataService } from 'app/shared/services/data.service';
 import { FooterComponent } from 'app/shared/footer/footer.component';
@@ -21,13 +23,17 @@ import { ReactiveFormsModule } from '@angular/forms';
     LetsBuildBtnComponent,
     ReadMoreLinkComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ResizePipe,
+    CDNPipe
   ],
   exports: [
     LetsBuildBtnComponent,
     ReadMoreLinkComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ResizePipe,
+    CDNPipe
   ],
   providers: [
     DataService,

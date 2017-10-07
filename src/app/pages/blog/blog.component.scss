@@ -1,7 +1,6 @@
 .jumbotron {
   &.main {
     margin-bottom: -1rem;
-    background-image: url("https://res.cloudinary.com/aviabird/image/upload/v1507121546/aviabird/header.svg");
     background-color: white;
     padding-bottom: 2rem;
     padding-top: 8rem;
@@ -56,7 +55,6 @@
 .list-group.blog-list {
   .list-group-item {
     transition: all 500ms;
-    cursor: pointer;
 
     .author {
       border-bottom: 1px dotted #777;

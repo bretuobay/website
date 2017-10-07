@@ -12,7 +12,7 @@
       <strong>What we can do for you</strong>
       <br>
       <li [routerLink]="service.link" *ngFor="let service of services" class="list-group-item">
-        <img src="/assets/services/{{service.icon}}.svg" alt="{{service.name}}">
+        <img [src]="service.icon | cdn" alt="{{service.name}}">
         {{service.name}}
         <i class="visit-link-arrow icon-right-open" aria-hidden="true"></i>
       </li>

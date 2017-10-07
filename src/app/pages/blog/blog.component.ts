@@ -26,6 +26,8 @@ export class BlogComponent implements OnInit, AfterViewInit {
     this.rssFeeds$ = this.data.medium_feeds();
   }
 
+  get menuItems() { return this.data.blog_menu_items; }
+
   blogImg(description = '') {
     return description.match(/(?:src=)(?:.*)\"/)[0].split('\"')[1];
   }

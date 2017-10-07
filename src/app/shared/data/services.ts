@@ -11,7 +11,7 @@ export const SERVICE_DATA = [
     summary: `Through data and user research, experimentation,
               and testing, we ensure what we’re building engages
               with your users the way they want.`,
-    icon: 'design',
+    icon: 'design.svg',
     link: '/services/design',
     articles: [
       {
@@ -45,7 +45,7 @@ export const SERVICE_DATA = [
               apps our engineers expertly architect and implement
               quality code that is cost effective for you, and is
               further supported by our design.`,
-    icon: 'engineering',
+    icon: 'engineering.svg',
     link: '/services/engineering',
     articles: [
       {
@@ -79,7 +79,7 @@ export const SERVICE_DATA = [
     summary: `We use technologies proven and supported by a large
               open-source community and adopted by leading companies
               like Apple, Netflix, Microsoft, and IBM.`,
-    icon: 'tech',
+    icon: 'tech.svg',
     link: '/services/technology',
     articles: [
       {
@@ -124,7 +124,7 @@ export const SERVICE_DATA = [
     summary: `We provide insight, resources, and the knowledge your
               team can learn and grow from to ensure comfort and
               success moving forward.`,
-    icon: 'support',
+    icon: 'support.svg',
     link: '/services/support',
     articles: [
       {
