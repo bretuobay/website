@@ -1,17 +1,8 @@
-.aviabird-groovepacker, .aviabird-logo, .aviabird-maxmywealth, .aviabird-my-veeta {
-  // width: 400px;
-}
-
-.aviabird-groovepacker {
-  transform: translateY(-3%) scale(0.5);
-}
-
-.aviabird-maxmywealth {
-  transform: translateY(-1%) scale(0.6);
-}
-
+.aviabird-groovepacker,
+.aviabird-logo,
+.aviabird-maxmywealth,
 .aviabird-my-veeta {
-  transform: translateY(12%) scale(0.6);
+  transform: scale(0.8);
 }
 
-@import url('https://res.cloudinary.com/aviabird/image/sprite/logo.css');
+@import url('http://res.cloudinary.com/aviabird/image/sprite/c_fit/logo.css');

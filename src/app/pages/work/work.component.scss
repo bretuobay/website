@@ -69,15 +69,12 @@
   .client_info {
     margin: 1rem 0;
     .client-logo {
-      margin-bottom: 1rem;
-      margin-left: -2rem;
       &.aviabird-groovepacker {
-        width: 410px;
-        transform: translateX(-14%) scale(0.5);
-        margin-bottom: 0rem;
+        margin-bottom: 0.8rem;
+        margin-left: -0.5rem;
       }
       &.aviabird-maxmywealth {
-        margin-bottom: 0rem;
+        margin-bottom: -0.4rem;
       }
     }
     p {
