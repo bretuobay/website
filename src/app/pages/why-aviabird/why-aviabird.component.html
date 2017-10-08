@@ -55,18 +55,15 @@
             <div class="col-12 col-lg-5 col-md-6">
               <img [src]="'large-' + service.icon | cdn" alt="{{service.name}}">
             </div>
-            <div class="col-12 col-md-6 col-lg-7">
+            <div class="col-12 col-md-6 col-lg-7 service-summary" routerLink="{{service.link}}">
               <legend>{{service.name}}</legend>
               <i class="selected-service-text">
                 {{service.summary}}
               </i>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-5 col-md-6"></div>
-            <div class="col-md-6 col-lg-7 align-self-end">
-              <br>
-              <aw-read-more-link [isExternalLink]="false" route="{{service.link}}"></aw-read-more-link>
+              <br><br>
+              <div class="read-more-wrapper">
+                <aw-read-more-link [isExternalLink]="false" route="{{service.link}}"></aw-read-more-link>
+              </div>
             </div>
           </div>
         </div>
