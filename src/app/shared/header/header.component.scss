@@ -10,6 +10,7 @@ nav {
 
   .navbar-brand, .navbar-toggler  {
     z-index: 2000;
+    padding: 0;
   }
 
   .navbar-toggler {
@@ -37,8 +38,8 @@ nav {
     background: white;
     border: none;
     bottom: 0;
-    -webkit-animation: dropdown 400ms;
-    animation: dropdown 400ms;
+    -webkit-animation: dropdown 500ms;
+    animation: dropdown 500ms;
     overflow: auto;
     li {
       a.dropdown-item {
@@ -46,7 +47,7 @@ nav {
         margin-left: 10%;
         border-bottom: 1px solid;
         text-align: center;
-        padding: 3rem;
+        padding: 2rem;
         font-size: 1.16em;
         transition: all 300ms;
         &:hover {
