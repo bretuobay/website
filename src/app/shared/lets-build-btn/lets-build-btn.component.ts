@@ -20,7 +20,7 @@ import { Component, OnInit } from '@angular/core';
     }
     .contact-btn:hover {
       box-shadow: 0 10px 20px #aaa;
-      transform: scale(1.05);
+      transform: translateY(-10%) scale(1.05);
     }`
   ]
 })

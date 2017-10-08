@@ -1,7 +1,7 @@
 .jumbotron {
-  background-color: #F8F8F8;
-  margin-bottom: -5rem;
   min-height: 50vh;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
 
   .main {
     margin-top: 2rem;
@@ -26,7 +26,7 @@
       }
     }
 
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
   }
 
   .first-article, .second-article {
@@ -67,6 +67,7 @@
 }
 
 .jumbotron.services {
+  padding-top: 2rem;
   background: white;
   /deep/ .read-more {
     color: black;
