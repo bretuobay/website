@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { Feed, DataService } from 'app/shared/services/data.service';
 
 @Component({
   selector: 'aw-consulting-template',
@@ -9,9 +11,16 @@ export class ConsultingTemplateComponent implements OnInit {
   @Input() data;
   @Input() language;
 
-  constructor() { }
+  rssFeeds$: Observable<Array<Feed>>;
+
+  constructor(private dataS: DataService) { }
 
   ngOnInit() {
+    this.rssFeeds$ = this.dataS.medium_feeds(this.language);
   }
+
+  parseDate(date) { return this.dataS.parseDate(date); }
+  blogImg(desc) { return this.dataS.blogImg(desc); }
+  parseHeading(desc) { return this.dataS.parseHeading(desc); }
 
 }

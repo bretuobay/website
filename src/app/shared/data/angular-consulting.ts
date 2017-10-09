@@ -57,5 +57,6 @@ export const ANGULAR_CONSULTING_DATA = {
       }
     ]
   },
-  contact_header: `Let’s talk about your Angular project`
+  contact_header: `Let’s talk about your Angular project`,
+  blog_header: 'WE LOVE SPREADING OUR ANGULAR KNOWLEDGE'
 };

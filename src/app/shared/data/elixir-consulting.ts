@@ -57,5 +57,6 @@ export const ELIXIR_CONSULTING_DATA = {
       }
     ]
   },
-  contact_header: `Let’s talk about your Elixir & Phoenix project`
+  contact_header: `Let’s talk about your Elixir & Phoenix project`,
+  blog_header: 'WE LOVE SPREADING OUR Elixir/Phoenix KNOWLEDGE'
 };

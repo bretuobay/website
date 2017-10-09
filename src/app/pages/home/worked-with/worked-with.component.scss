@@ -3,24 +3,7 @@
   @media (max-width: 576px) {
     padding-bottom: 2rem;
   }
-  .worked-with {
-    .heading {
-      i.border-before, i.border-after {
-        margin-top: 10px;
-        height: 1px;
-        width: 20px;
-        position: relative;
-        display: block;
-        background-color: #aaa;
-      }
-      i.border-before {
-        left: -2rem;
-      }
-      i.border-after {
-        right: -2rem;
-      }
-    }
-  
+  .worked-with {  
     .client-list {
       margin-top: 2rem;
       .client-list-item {
