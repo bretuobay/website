@@ -9,6 +9,7 @@ const routes: Route[] = [
   { loadChildren: './pages/why-aviabird/why-aviabird.module#WhyAviabirdModule', path: 'why-aviabird' },
   { loadChildren: './pages/blog/blog.module#BlogModule', path: 'blog' },
   { loadChildren: './pages/contact/contact.module#ContactModule', path: 'contact' },
+  { loadChildren: './pages/consulting/consulting.module#ConsultingModule', path: 'consulting' },
   // otherwise redirect to home
   { path: '**', redirectTo: '' }
 ];

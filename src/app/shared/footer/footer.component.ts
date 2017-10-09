@@ -38,15 +38,15 @@ export class FooterComponent implements OnInit {
     return [
       {
         name: 'Angular',
-        link: '/angular-consulting'
+        link: '/consulting/angular'
       },
       {
         name: 'Ruby on Rails',
-        link: '/ror-consulting'
+        link: '/consulting/ror'
       },
       {
         name: 'Elixir/Phoenix',
-        link: '/angular-consulting'
+        link: '/consulting/phoenix'
       }
     ];
   }
