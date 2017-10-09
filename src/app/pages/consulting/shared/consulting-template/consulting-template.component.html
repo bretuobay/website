@@ -78,7 +78,7 @@
       </div>
       <div class="col-12 news-list" *ngIf="rssFeeds$ | async; let rssFeeds; else loading">
         <div class="row justify-content-center">
-          <a class="col-12 col-lg-4 news-list-item mb-3 mt-3" *ngFor="let latest of rssFeeds | slice:0:6" rel=noreferrer [href]="latest.link"
+          <a class="col-12 col-lg-4 news-list-item mb-3 mt-2" *ngFor="let latest of rssFeeds | slice:0:6" rel=noreferrer [href]="latest.link"
             target="_blank">
             <div class="news-list-item-card">
               <h6 class="date">
@@ -91,15 +91,6 @@
               <aw-read-more-link isExternalLink="true" link="{{latest.link}}"></aw-read-more-link>
             </div>
           </a>
-          <ng-template #loading>
-            <br>
-            <div class="row justify-content-center">
-              <h6 class="text-center col-4">
-                <img heigh="100" width="100" src="https://res.cloudinary.com/aviabird/image/upload/v1507121545/aviabird/loader.svg" alt="Loading Blogs"
-                />
-              </h6>
-            </div>
-          </ng-template>
         </div>
         <div class="row mt-5">
           <p class="col more-posts text-center">
@@ -107,6 +98,16 @@
           </p>
         </div>
       </div>
+      <ng-template #loading>
+        <div class="col-12">
+          <div class="row justify-content-center">
+            <h6 class="text-center col-4">
+              <img heigh="100" width="100" src="https://res.cloudinary.com/aviabird/image/upload/v1507121545/aviabird/loader.svg" alt="Loading Blogs"
+              />
+            </h6>
+          </div>
+        </div>
+      </ng-template>
     </div>
   </div>
 </div>
