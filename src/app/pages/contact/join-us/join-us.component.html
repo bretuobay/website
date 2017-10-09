@@ -1,0 +1,53 @@
+<div class="jumbotron jumbotron-fluid jumbotron-light-grey">
+  <div class="container">
+    <div class="row main">
+      <div class="col-12 col-md-10 col-lg-9">
+        <h1 class="header">
+          Join Us
+        </h1>
+        <p class="para">
+          We hire kind, driven people and support them with great benefits.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid form">
+  <div class="container">
+    <div class="row main">
+      <div class="col-lg-2 col-md-1 d-sm-hidden"></div>
+      <div class="col-12 col-md-10 col-lg-8">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="contactName"><b>What is your name? </b><strong class="text-danger">*</strong></label>
+            <input id="contactName" formControlName="name" class="form-control form-control-lg" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="contactEmail"><b>What email address do you use?</b> <strong class="text-danger">*</strong></label>
+            <input id="contactEmail" formControlName="email" class="form-control form-control-lg" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="contactLocation"><b>Where are you located? </b><strong class="text-danger">*</strong></label>
+            <input id="contactLocation" formControlName="location" class="form-control form-control-lg" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="contactMsg"><b>Tell us about yourself </b><strong class="text-danger">*</strong></label>
+            <textarea id="contactMsg" formControlName="message" class="form-control form-control-lg" rows="7"></textarea>
+          </div>
+
+          <button class="contact-btn btn btn-outline-dark btn-lg" type="submit">
+            Submit
+          </button>
+
+          <div class="alert alert-danger" role="alert" [hidden]="form.valid || !showAlert">
+            <strong>Oh snap!</strong> Did you fill up the required fields?
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

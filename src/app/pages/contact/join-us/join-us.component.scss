@@ -1,0 +1,80 @@
+.jumbotron {
+  margin-bottom: 0;
+  padding-bottom: 0rem;
+  min-height: 30vh;
+  .main {
+    margin-top: 2rem;
+    .header {
+      font-size: 3.4rem;
+      padding-bottom: 1rem;
+      font-weight: bold;
+      color: #222;
+    }
+    .para {
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+    @media (max-width: 992px) {
+      padding-bottom: 3rem;
+      .header {
+        font-size: 2rem;
+      }
+      .para {
+        font-size: 1rem;
+      }
+    }
+    @media (max-width: 552px) {
+      .header,
+      .para {
+        text-align: center;
+      }
+    }
+    padding-bottom: 5rem;
+  }
+}
+
+.jumbotron.form {
+  background: white;
+  form {
+    .form-group {
+      input.form-control-lg,
+      select.form-control-lg {
+        height: 4rem;
+        margin-bottom: 2rem;
+        border-radius: 0;
+        &:hover,
+        &:focus {
+          border: 1px solid #222;
+        }
+      }
+      textarea {
+        border-radius: 0;
+        margin-bottom: 2rem;
+      }
+      label span {
+        color: #aeaeae;
+        font-weight: 100;
+      }
+    }
+    .contact-btn {
+      width: 10rem;
+      border-radius: 0;
+      border-width: 2px;
+      margin-bottom: 1rem;
+      transition: all 500ms;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+      &:disabled {
+        cursor: not-allowed;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .contact-btn:hover {
+      box-shadow: 0 10px 20px #aaa;
+      transform: scale(1.02);
+    }
+  }
+}

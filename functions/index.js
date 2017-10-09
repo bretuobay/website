@@ -40,7 +40,7 @@ exports.sendContactMessage = functions.database.ref('/messages/{pushKey}').onWri
     from: val.name,
     to: 'hello@aviabird.com',
     replyTo: val.email,
-    subject: `Client Alert! New Message from Aviabird.com`,
+    subject: val.subject,
     html: val.html
   };
   return mailTransport.sendMail(mailOptions).then(() => {

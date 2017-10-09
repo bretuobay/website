@@ -59,7 +59,7 @@ export class FooterComponent implements OnInit {
       },
       {
         name: 'Join Us',
-        link: '/join-us'
+        link: '/contact/join-us'
       }
     ];
   }
