@@ -22,6 +22,8 @@
     img {
       filter: drop-shadow(3px 3px 1px #aeaeae);
       -webkit-filter: drop-shadow(3px 3px 1px #aeaeae);
+      height: 25vw;
+      max-height: 400px;
     }
     @media (max-width: 992px) {
       padding-bottom: 3rem;

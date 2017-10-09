@@ -1,4 +1,5 @@
 export const ANGULAR_CONSULTING_DATA = {
+  color: '#FA2E00',
   main: {
     logo: 'angular2-logo.svg',
     header: 'Hire the best team for Angular',

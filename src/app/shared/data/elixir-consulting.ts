@@ -1,4 +1,5 @@
 export const ELIXIR_CONSULTING_DATA = {
+  color: '#5C2861',
   main: {
     logo: 'phoenix-logo.svg',
     header: 'Let’s do Elixir & Phoenix, together',
