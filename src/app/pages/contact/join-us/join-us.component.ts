@@ -57,7 +57,7 @@ export class JoinUsComponent implements OnInit {
     `;
 
     const formRequest = {
-      name, email, location, message, date, html
+      name, email, location, message, date, html, subject
     };
 
     const subs = this.http.post(

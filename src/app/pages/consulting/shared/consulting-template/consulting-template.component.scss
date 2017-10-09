@@ -6,7 +6,7 @@
 
   .main {
     margin-top: 5rem;
-    margin-bottom: 15vw;
+    margin-bottom: 7.5vw;
     .header {
       font-size: 4rem;
       padding-bottom: 1rem;
@@ -16,6 +16,13 @@
       font-size: 1.4rem;
       font-weight: 300;
     }
+    aw-lets-build-btn {
+      margin-bottom: 7.5vw;
+    }
+    img {
+      filter: drop-shadow(3px 3px 1px #aeaeae);
+      -webkit-filter: drop-shadow(3px 3px 1px #aeaeae);
+    }
     @media (max-width: 992px) {
       padding-bottom: 3rem;
       .header {
@@ -24,6 +31,7 @@
       .para {
         font-size: 1rem;
       }
+      margin-top: 2rem;
     }
     @media (max-width: 552px) {
       .header,
@@ -31,6 +39,7 @@
       aw-lets-build-btn {
         text-align: center;
       }
+      margin-top: 1rem;
     }
   }
 
@@ -100,6 +109,8 @@
     .icon-mail:before {
       font-size: 10rem;
       margin-top: -2rem;
+      filter: drop-shadow(2px 2px 2px #444);
+      -webkit-filter: drop-shadow(2px 2px 2px #444);
       @media (max-width: 552px) {
         font-size: 5rem;
         margin-top: 0;
