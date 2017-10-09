@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ConsultingTemplateComponent implements OnInit {
   @Input() data;
+  @Input() language;
 
   constructor() { }
 

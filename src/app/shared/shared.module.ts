@@ -11,6 +11,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { LetsBuildBtnComponent } from './lets-build-btn/lets-build-btn.component';
 import { ReadMoreLinkComponent } from './read-more-link/read-more-link.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HireUsFormComponent } from './hire-us-form/hire-us-form.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     ResizePipe,
-    CDNPipe
+    CDNPipe,
+    HireUsFormComponent
   ],
   exports: [
     LetsBuildBtnComponent,
@@ -33,7 +35,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     ResizePipe,
-    CDNPipe
+    CDNPipe,
+    HireUsFormComponent
   ],
   providers: [
     DataService,

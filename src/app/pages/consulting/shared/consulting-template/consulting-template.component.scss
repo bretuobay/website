@@ -5,20 +5,16 @@
   color: #333;
 
   .main {
-    margin-top: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 15vw;
     .header {
-      font-size: 3.4rem;
+      font-size: 4rem;
       padding-bottom: 1rem;
       font-weight: bold;
     }
     .para {
       font-size: 1.4rem;
       font-weight: 300;
-    }
-    img {
-      @media (min-width: 752px) {
-        margin-top: -2rem;
-      }
     }
     @media (max-width: 992px) {
       padding-bottom: 3rem;
@@ -46,6 +42,14 @@
       padding-bottom: 1rem;
       font-weight: bold;
       line-height: 3.5rem;
+      @media (max-width: 992px) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+      @media (max-width: 552px) {
+        font-size: 1.7rem;
+        line-height: 2rem;
+      }
     }
     figure {
       img {
@@ -59,9 +63,6 @@
       }
     }
   }
-}
-
-.jumbotron {
   .proof {
     .proof-items {
       .proof-item {
@@ -78,5 +79,34 @@
         }
       }
     }
+  }
+  .contact {
+    padding: 11rem 0 17rem;
+    @media (max-width: 652px) {
+      padding: 4rem 0 6rem;
+    }
+    .header {
+      font-size: 3rem;
+      font-weight: bold;
+      @media (max-width: 992px) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+      @media (max-width: 552px) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+    }
+    .icon-mail:before {
+      font-size: 10rem;
+      margin-top: -2rem;
+      @media (max-width: 552px) {
+        font-size: 5rem;
+        margin-top: 0;
+      }
+    }
+  }
+  .hire-us {
+    padding: 1rem 0 5rem;
   }
 }

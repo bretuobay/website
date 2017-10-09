@@ -9,7 +9,7 @@
         <aw-lets-build-btn></aw-lets-build-btn>
       </div>
       <div class="col-12 col-md-7 col-lg-7 text-center">
-        <img [src]="data.main.logo | cdn" alt="">
+        <img [src]="data.main.logo | cdn" [alt]="language">
       </div>
     </div>
 
@@ -21,7 +21,7 @@
       </div>
       <div class="col-12">
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-3" *ngFor="let desc of data.project_desc">
+          <div class="col-12 col-md-6 col-lg-3 mb-5 mt-5" *ngFor="let desc of data.project_desc">
             <figure>
               <img [src]="desc.logo | cdn" [alt]="desc.logo">
               <figcaption>
@@ -61,6 +61,30 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid bg-danger">
+  <div class="container">
+    <div class="row contact">
+      <div class="col">
+        <h3 class="header text-white">{{data.contact_header}}</h3>
+      </div>
+      <div class="col-6 text-center">
+        <i class="icon-mail text-white"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid bg-white">
+  <div class="container">
+    <div class="row hire-us">
+      <div class="col-lg-2 col-md-1 d-sm-hidden"></div>
+      <div class="col-12 col-md-10 col-lg-8">
+        <aw-hire-us-form></aw-hire-us-form>
       </div>
     </div>
   </div>
