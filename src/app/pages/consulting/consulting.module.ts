@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AngularConsultingComponent } from 'app/pages/consulting/angular-consulting/angular-consulting.component';
 import { RorConsultingComponent } from './ror-consulting/ror-consulting.component';
 import { SharedModule } from 'app/shared/shared.module';
+import { ConsultingTemplateComponent } from './shared/consulting-template/consulting-template.component';
 
 const routing: ModuleWithProviders = RouterModule.forChild([
   {path: '', redirectTo: 'angular'},
@@ -22,7 +23,8 @@ const routing: ModuleWithProviders = RouterModule.forChild([
   declarations: [
     AngularConsultingComponent,
     RorConsultingComponent,
-    PhoenixConsultingComponent
+    PhoenixConsultingComponent,
+    ConsultingTemplateComponent
   ]
 })
 export class ConsultingModule { }

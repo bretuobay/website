@@ -37,7 +37,10 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.jumbotron-light-grey {
-  background-color: #F8F8F8;
+.jumbotron-box-inset-shadow {
   box-shadow: inset 0 0 5px #aaa;
+}
+
+.bg-white {
+  background-color: white;
 }

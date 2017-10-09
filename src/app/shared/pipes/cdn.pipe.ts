@@ -1,9 +1,9 @@
 import { environment } from 'environments/environment';
 import { Pipe, PipeTransform } from '@angular/core';
 /*
- * Apply Cloudinary Transformations
+ * prefix with cloudinary api
  * Usage:
- *   value | resize:modifiers
+ *   value | cdn
  * Example:
  *   {{ 'xyz.png' | cdn }}
  *   formats to: https://res.cloudinary.com/demo/upload/xyz.png
