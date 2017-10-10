@@ -11,10 +11,12 @@ export class CanvasAnimateService {
     '52, 152, 219',
     '41, 128, 185'
   ];
+  stopAnimation = false;
 
   constructor(private zone: NgZone) { }
 
   addCircleAnimation(context: CanvasRenderingContext2D, nCircles = 50) {
+    this.stopAnimation = false;
     this.zone.runOutsideAngular(() => {
       for (let i = 0; i < nCircles; i++) {
         const {x, y, dx, dy, radius} = this.randomCircleConf(context);
@@ -38,7 +40,10 @@ export class CanvasAnimateService {
   }
 
   private animateCircle(context: CanvasRenderingContext2D) {
-    requestAnimationFrame( _ => this.animateCircle(context));
+    requestAnimationFrame( _ =>
+      this.stopAnimation ? null : this.animateCircle(context)
+    );
+
     context.clearRect(0, 0, innerWidth, context.canvas.height);
 
     this.circleArray.forEach(circle => {

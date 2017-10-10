@@ -1,6 +1,6 @@
 import { DataService, Feed } from './../../shared/services/data.service';
 import { Observable } from 'rxjs/Observable';
-import { Component, OnInit, AfterViewInit, ElementRef, HostBinding, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef, HostBinding, ChangeDetectionStrategy, OnDestroy } from '@angular/core';
 import { CanvasAnimateService } from 'app/shared/services/canvas-animate.service';
 import { fadeInAnimation } from 'app/shared/animations';
 
@@ -11,7 +11,7 @@ import { fadeInAnimation } from 'app/shared/animations';
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./blog.component.scss']
 })
-export class BlogComponent implements OnInit, AfterViewInit {
+export class BlogComponent implements OnInit, AfterViewInit, OnDestroy {
   @HostBinding('@fadeInAnimation')
   public animatePage = true;
 
@@ -55,6 +55,10 @@ export class BlogComponent implements OnInit, AfterViewInit {
     canvas.width = main.offsetWidth;
     canvas.height = main.offsetHeight - 15;
     this.canvasAnimate.addCircleAnimation(context, innerWidth / 20);
+  }
+
+  ngOnDestroy() {
+    this.canvasAnimate.stopAnimation = true;
   }
 
 }
