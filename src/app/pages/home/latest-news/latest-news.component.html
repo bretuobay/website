@@ -5,8 +5,8 @@
       <h6 class="d-flex justify-content-center">LATEST</h6>
       <i class="border-after"></i>
     </div>
-    <div class="row news-list" *ngIf="rssFeeds$ | async; let rssFeeds; else loading">
-      <a class="col-12 col-lg-4 news-list-item"
+    <div class="row news-list mt-5 pb-2 pb-sm-1" *ngIf="rssFeeds$ | async; let rssFeeds; else loading">
+      <a class="col-12 col-md-6 col-lg-4 news-list-item mb-5"
         *ngFor="let latest of rssFeeds | slice:0:3"
         rel=noreferrer
         [href]="latest.link" target="_blank"

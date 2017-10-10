@@ -1,0 +1,24 @@
+<div class="row justify-content-center proof">
+  <div class="col-12 col-lg-10">
+    <div class="row">
+      <div class="col mb-2 text-center">
+        <h3 class="header font-weight-bold mt-5 mt-sm-2">{{data.proof.header}}</h3>
+      </div>
+      <div class="col-12 mb-5">
+        <div class="row proof-items">
+          <div class="col-12 col-md-6 col-lg-6 proof-item mt-5 mb-2 mb-sm-4" *ngFor="let proof of data.proof.items">
+            <div class="row">
+              <div class="col-1">
+                <i [style.border-color]="data.color" [style.color]="data.color" class="icon-ok"></i>
+              </div>
+              <div class="col-11">
+                <h4 class="mb-4 ml-3">{{proof.header}}</h4>
+                <p class="ml-3">{{proof.body}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

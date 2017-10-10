@@ -1,0 +1,17 @@
+.proof {
+  .proof-items {
+    .proof-item {
+      h4 {
+        font-weight: 200;
+      }
+      .icon-ok {
+        border: 2px solid red;
+        padding: 3.5px;
+        height: 35px;
+        width: 35px;
+        border-radius: 17.5px;
+        position: absolute;
+      }
+    }
+  }
+}

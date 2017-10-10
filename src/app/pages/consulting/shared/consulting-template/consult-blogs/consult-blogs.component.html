@@ -1,0 +1,37 @@
+<div class="row blog">
+  <div class="col">
+    <div class="heading row justify-content-center mt-3 mb-5">
+      <i class="border-before"></i>
+      <h6 class="d-flex justify-content-center font-weight-bold">{{data.blog_header}}</h6>
+      <i class="border-after"></i>
+    </div>
+  </div>
+  <div class="col-12 news-list" *ngIf="rssFeeds; else loading">
+    <div class="row justify-content-center">
+      <a class="col-12 col-lg-4 news-list-item mb-3 mt-2" *ngFor="let latest of rssFeeds | slice:0:6" rel=noreferrer [href]="latest.link"
+        target="_blank">
+        <div class="news-list-item-card">
+          <img class="bg-light mb-4" [src]="blogImg(latest.description)" alt="latest.title">
+          <strong class="type mb-2">BLOG</strong>
+          <h5 class="news-title mt-2 mb-5">{{latest.title}}</h5>
+          <aw-read-more-link isExternalLink="true" link="{{latest.link}}"></aw-read-more-link>
+        </div>
+      </a>
+    </div>
+    <div class="row mt-5">
+      <p class="col more-posts text-center">
+        See more posts about
+        <a href="https://medium.com/aviabird/tagged/{{language}}">{{language}}</a>
+      </p>
+    </div>
+  </div>
+  <ng-template #loading>
+    <div class="col-12">
+      <div class="row justify-content-center">
+        <h6 class="text-center col-4">
+          <img heigh="100" width="100" [src]="'loader.svg' | cdn" alt="Loading Blogs" />
+        </h6>
+      </div>
+    </div>
+  </ng-template>
+</div>

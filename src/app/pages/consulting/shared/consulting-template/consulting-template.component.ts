@@ -19,7 +19,4 @@ export class ConsultingTemplateComponent implements OnInit {
     this.rssFeeds$ = this.dataS.medium_feeds(this.language);
   }
 
-  parseDate(date) { return this.dataS.parseDate(date); }
-  blogImg(desc) { return this.dataS.blogImg(desc); }
-
 }
