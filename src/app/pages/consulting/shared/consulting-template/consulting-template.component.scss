@@ -140,7 +140,7 @@
           transition: color 300ms;
           background-color: white;
           padding: 1rem;
-          color: rgba(black, 0.7);
+          color: #333;
           aw-read-more-link {
             position: absolute;
             bottom: 1rem;
@@ -149,7 +149,6 @@
             }
           }
           &:hover {
-            color: black;
             aw-read-more-link {
               /deep/ .read-more {
                 .icon-right-open:before {
@@ -163,26 +162,23 @@
             height: 200px;
             object-fit: contain;
           }
-          .date {
-            background-color: rgba(255, 255, 255, 0.5);
-            position: absolute;
-            padding: 10px;
-            text-align: center;
-            font-weight: 500;
-            z-index: 9;
-            color: #000000;
+          .type {
+            font-size: 0.8rem;
           }
           .news-title {
-            margin-top: 2.5rem;
-            font-weight: 300;
-            font-size: 1.2rem;
+            margin: 1rem auto 1.3rem;
+            font-weight: 200;
+            font-size: 1.3rem;
             height: 2.4rem;
+            letter-spacing: 0.1rem;
           }
           .news-heading {
             margin: 1rem auto;
             font-weight: 100;
-            font-size: 0.9rem;
-            min-height: 150px;
+            font-size: 0.8rem;
+            font-style: italic;
+            min-height: 100px;
+            color: #666;
             @media (max-width: 576px) {
               min-height: 50px;
             }

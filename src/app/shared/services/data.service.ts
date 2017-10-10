@@ -49,12 +49,12 @@ export class DataService {
       .replace('max/1024', `max/${width}`);
   }
 
-  parseHeading(description = '') {
+  parseHeading(description = '', length = 250) {
     return description
       .match(/<p>(?:.*)<\/p>/g)[0]
       .split('<p>')[1]
       .split('</p>')[0]
-      .substring(0, 250) + ' ...';
+      .substring(0, length) + ' ...';
   }
 
   parseDate(date = '') {

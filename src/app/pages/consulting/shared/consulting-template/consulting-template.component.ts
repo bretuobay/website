@@ -21,6 +21,6 @@ export class ConsultingTemplateComponent implements OnInit {
 
   parseDate(date) { return this.dataS.parseDate(date); }
   blogImg(desc) { return this.dataS.blogImg(desc); }
-  parseHeading(desc) { return this.dataS.parseHeading(desc); }
+  parseHeading(desc) { return this.dataS.parseHeading(desc, 70); }
 
 }

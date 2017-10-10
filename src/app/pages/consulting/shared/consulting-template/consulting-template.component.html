@@ -81,11 +81,8 @@
           <a class="col-12 col-lg-4 news-list-item mb-3 mt-2" *ngFor="let latest of rssFeeds | slice:0:6" rel=noreferrer [href]="latest.link"
             target="_blank">
             <div class="news-list-item-card">
-              <h6 class="date">
-                {{parseDate(latest.pubDate).getDate()}}
-                <br> {{parseDate(latest.pubDate).toString().split(" ")[1]}}
-              </h6>
-              <img class="bg-light" [src]="blogImg(latest.description)" alt="latest.title">
+              <img [src]="blogImg(latest.description)" alt="latest.title">
+              <strong class="type">BLOG</strong>
               <h5 class="news-title">{{latest.title}}</h5>
               <p class="news-heading" [innerHtml]="parseHeading(latest.description)"></p>
               <aw-read-more-link isExternalLink="true" link="{{latest.link}}"></aw-read-more-link>
@@ -102,7 +99,7 @@
         <div class="col-12">
           <div class="row justify-content-center">
             <h6 class="text-center col-4">
-              <img heigh="100" width="100" src="https://res.cloudinary.com/aviabird/image/upload/v1507121545/aviabird/loader.svg" alt="Loading Blogs"
+              <img heigh="100" width="100" [src]="'loader.svg' | cdn" alt="Loading Blogs"
               />
             </h6>
           </div>
