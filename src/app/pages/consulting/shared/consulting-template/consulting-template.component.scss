@@ -154,22 +154,11 @@
             font-size: 0.8rem;
           }
           .news-title {
-            margin: 1rem auto 1.3rem;
             font-weight: 200;
-            font-size: 1.3rem;
-            height: 2.4rem;
+            font-size: 1.4rem;
+            height: 7rem;
             letter-spacing: 0.1rem;
-          }
-          .news-heading {
-            margin: 1rem auto;
-            font-weight: 100;
-            font-size: 0.8rem;
-            font-style: italic;
-            min-height: 100px;
-            color: #666;
-            @media (max-width: 576px) {
-              min-height: 50px;
-            }
+            line-height: 1.7rem;
           }
         }
       }

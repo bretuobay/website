@@ -81,10 +81,9 @@
           <a class="col-12 col-lg-4 news-list-item mb-3 mt-2" *ngFor="let latest of rssFeeds | slice:0:6" rel=noreferrer [href]="latest.link"
             target="_blank">
             <div class="news-list-item-card">
-              <img [src]="blogImg(latest.description)" alt="latest.title">
-              <strong class="type">BLOG</strong>
-              <h5 class="news-title">{{latest.title}}</h5>
-              <p class="news-heading" [innerHtml]="parseHeading(latest.description)"></p>
+              <img class="bg-light" [src]="blogImg(latest.description)" alt="latest.title">
+              <strong class="type mt-2 mb-2">BLOG</strong>
+              <h5 class="news-title mt-2 mb-5">{{latest.title}}</h5>
               <aw-read-more-link isExternalLink="true" link="{{latest.link}}"></aw-read-more-link>
             </div>
           </a>
