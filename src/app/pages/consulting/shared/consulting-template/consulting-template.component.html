@@ -1,6 +1,6 @@
 <div class="jumbotron jumbotron-fluid jumbotron-box-inset-shadow bg-light">
   <div class="container">
-    <div class="row main">
+    <div class="row main mt-5 mb-5 pb-md-1 mt-md-5 text-center text-md-left">
       <div class="col">
         <h1 class="header">{{data.main.header}}</h1>
         <p class="para">
@@ -13,16 +13,16 @@
       </div>
     </div>
 
-    <div class="row about">
+    <div class="row about mt-2 pb-5 text-center text-md-left">
       <div class="col-12 col-md-10 col-lg-9">
-        <h1 class="header mb-5">
+        <h1 class="header mt-1 mt-sm-5 mb-5">
           {{data.about.header}}
         </h1>
       </div>
       <div class="col-12">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3" *ngFor="let desc of data.project_desc">
-            <figure>
+            <figure class="mt-3 mb-5">
               <img [src]="desc.logo | cdn" [alt]="desc.logo">
               <figcaption>
                 <h3 class="mt-4 mb-4">{{desc.header}}</h3>
