@@ -25,7 +25,7 @@ export const ANGULAR_CONSULTING_DATA = {
       body: 'Build team knowledge on the most recent Angular updates and best practices.'
     },
     {
-      logo: 'full-stack.svg',
+      logo: 'arch-review.svg',
       header: 'Architectural reviews',
       body: 'Rest easy knowing your code is working at its cost-effective best.'
     }

@@ -21,7 +21,7 @@
       </div>
       <div class="col-12">
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-3 mb-5 mt-5" *ngFor="let desc of data.project_desc">
+          <div class="col-12 col-md-6 col-lg-3" *ngFor="let desc of data.project_desc">
             <figure>
               <img [src]="desc.logo | cdn" [alt]="desc.logo">
               <figcaption>
@@ -42,12 +42,12 @@
     <div class="row justify-content-center proof">
       <div class="col-12 col-lg-10">
         <div class="row">
-          <div class="col mb-5">
-            <h3 class="header font-weight-bold mt-5">{{data.proof.header}}</h3>
+          <div class="col mb-2 text-center">
+            <h3 class="header font-weight-bold mt-5 mt-sm-2">{{data.proof.header}}</h3>
           </div>
-          <div class="col-12">
+          <div class="col-12 mb-5">
             <div class="row proof-items">
-              <div class="col-12 col-md-6 col-lg-6 proof-item mt-5 mb-5" *ngFor="let proof of data.proof.items">
+              <div class="col-12 col-md-6 col-lg-6 proof-item mt-5 mb-2 mb-sm-4" *ngFor="let proof of data.proof.items">
                 <div class="row">
                   <div class="col-1">
                     <i [style.border-color]="data.color" [style.color]="data.color" class="icon-ok"></i>
