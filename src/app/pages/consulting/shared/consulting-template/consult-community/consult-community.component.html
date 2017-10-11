@@ -1,0 +1,31 @@
+<div class="row community justify-content-center">
+  <div class="col-12 col-md-8">
+    <h4 class="font-weight-bold">{{data.community.header}}</h4>
+    <p class="pt-4">{{data.community.sub_header}}</p>
+  </div>
+</div>
+
+<div class="row opensource mt-5 justify-content-center pb-5">
+  <div class="col-12 col-md-6">
+    <div class="col-12">
+      <div class="heading row justify-content-center mt-3 mb-5">
+        <i class="border-before"></i>
+        <h6 [innerHtml]="data.community.opensource_header" class="d-flex justify-content-center font-weight-bold"></h6>
+        <i class="border-after"></i>
+      </div>
+    </div>
+    <div class="col-12">
+      <ul class="list-group opensource-list">
+        <li *ngFor="let opensource of data.community.opensource" class="list-group-item">
+          <a class="text-inherit" [href]="opensource.link">
+            <h4 class="font-weight-bold">{{opensource.name}}</h4>
+            <i>{{opensource.title}}</i>
+          </a>
+        </li>
+      </ul>
+      <div class="col mt-5 mb-5">
+        <a class="text-inherit with-border" href="https://github.com/aviabird">… & many other projects we support!</a>
+      </div>
+    </div>
+  </div>
+</div>

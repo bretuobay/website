@@ -58,5 +58,34 @@ export const ANGULAR_CONSULTING_DATA = {
     ]
   },
   contact_header: `Let’s talk about your Angular project`,
-  blog_header: 'OUR ANGULAR KNOWLEDGE'
+  blog_header: 'OUR ANGULAR KNOWLEDGE',
+  community: {
+    header: 'We’re a big part of the Angular community, too!',
+    sub_header: `We made an early investment in the Angular eco-system. Our
+    commitment to the Angular community involves conferences we’ve run,
+    meetups we’ve organized, open source we’ve written. We believe that
+    Angular is the best choice for building modern web applications.`,
+    items: [
+
+    ],
+    opensource_header: 'Aviabird &nbsp; <i class="icon-heart"></i> &nbsp; OPEN SOURCE',
+    opensource: [
+      {
+        name: 'AngularSpree',
+        title: 'Angular4+ E-Commerce front-end framework for spreecommerce',
+        link: 'https://github.com/aviabird/angularspree'
+      },
+      {
+        name: 'Yatrum',
+        title: `Yatrum - Share and Discover Travel Stories, Itineraries,
+        Travel Guides built with ♥️ using Angular 2+( current 4.0.0)`,
+        link: 'https://github.com/aviabird/yatrum'
+      },
+      {
+        name: 'PinWork',
+        title: 'PinWork(Pinterest for bloggers) built with ❤️ using Angular2 (4.0.0)',
+        link: 'https://github.com/aviabird/pinterest'
+      }
+    ]
+  }
 };

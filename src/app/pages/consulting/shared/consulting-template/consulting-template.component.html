@@ -16,4 +16,10 @@
   </div>
 </div>
 
+<div *ngIf="data.community" class="jumbotron jumbotron-fluid bg-white">
+  <div class="container">
+    <aw-consult-community [data]="data" [language]="language"></aw-consult-community>
+  </div>
+</div>
+
 <aw-consult-contact-us [data]="data" [language]="language"></aw-consult-contact-us>

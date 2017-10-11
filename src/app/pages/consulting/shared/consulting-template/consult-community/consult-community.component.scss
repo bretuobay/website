@@ -1,0 +1,17 @@
+.list-group.opensource-list {
+  .list-group-item {
+    cursor: pointer;
+    &:hover {
+      background-color: #444;
+      color: white;
+    }
+    &:focus {
+      outline: none;
+    }
+    border: none;
+    &:not(:last-child) {
+      border-bottom: 2px solid;
+    }
+    border-radius: 0px !important;
+  }
+}

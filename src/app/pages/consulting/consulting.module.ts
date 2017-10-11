@@ -10,6 +10,7 @@ import { ConsultWhyUsComponent } from './shared/consulting-template/consult-why-
 import { ConsultBlogsComponent } from './shared/consulting-template/consult-blogs/consult-blogs.component';
 import { ConsultContactUsComponent } from './shared/consulting-template/consult-contact-us/consult-contact-us.component';
 import { ConsultProofComponent } from './shared/consulting-template/consult-proof/consult-proof.component';
+import { ConsultCommunityComponent } from './shared/consulting-template/consult-community/consult-community.component';
 
 const routing: ModuleWithProviders = RouterModule.forChild([
   {path: '', redirectTo: 'angular'},
@@ -31,7 +32,8 @@ const routing: ModuleWithProviders = RouterModule.forChild([
     ConsultWhyUsComponent,
     ConsultBlogsComponent,
     ConsultContactUsComponent,
-    ConsultProofComponent
+    ConsultProofComponent,
+    ConsultCommunityComponent
   ]
 })
 export class ConsultingModule { }
